@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./css/pic/dk02.jpg">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -10,32 +11,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/0528.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
     <title>building companies</title>
-    <style>
-      body {
-        background-color: #000;
-      }
-      .navbar,.dropdown-menu{
-        background-color: rgb(40,40,40);
-      }
-      .dropdown-item:hover{
-        background-color: #000;
-      }
-      .boss img {
-        height: 200px;
-        width: 300px;
-      }
-      .textArea {
-        background-color: #000;
-      }
-      
-    </style>
   </head>
   <body>
     <header>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand navbar-Home " href="#"
           ><img
             src="./css/pic/dk02.jpg"
             width="50"
@@ -60,12 +43,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-warning" href="#"
-                >Home<span class="sr-only ">(current)</span></a
+              <a class="nav-link navbar-Home text-warning" href="#"
+                >首頁<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#">About</a>
+              <a class="nav-link navbar-About text-warning" href="#"
+                >關於我們</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -77,17 +62,18 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Portfolio
+                建案成品
               </a>
-              <div class="dropdown-menu text-warning" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-warning" href="#"> villa</a>
-                <a class="dropdown-item text-warning" href="#">Art building</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-warning" href="#">商業大樓</a>
+                <a class="dropdown-item text-warning" href="#">藝術建築</a>
+                <a class="dropdown-item text-warning" href="#">醫院生技</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-warning" href="#">More building</a>
+                <a class="dropdown-item text-warning" href="#">各式建築</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#">Contact</a>
+              <a class="nav-link text-warning navbar-Contact" href="#">聯絡我們</a>
             </li>
             <!-- <li class="nav-item">
               <a
@@ -173,8 +159,37 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- 介紹 -->
-    <div class="container-fluid textArea text-light">
+    <!-- 流程塊 -->
+    <div class="container About">
+      <div class="row">
+        <div class="col">
+          <div class="mt-4 mb-5 ">
+            <h1 class="text-warning">關於我們</h1>
+            <p>
+              不要先入為主覺得建築很複雜，實際上，建築可能比你想的還要更複雜，建築的出現，必將帶領人類走向更高的巔峰。<br>
+              我相信有情感的建築“建築”的生命就是它的美。這對人類是很重要的。對一個問題如果有許多解決方法，其中的那種給使用者傳達美和情感的就是建築。
+            </p>
+        <div class="Process row justify-content-around">
+          <div class="col-5 col-md-2 m-3 " >
+              <i class="fa fas fa-clipboard-check"></i>
+            <div class="step step1">企劃</div>
+          </div>
+          <div class="col-5 col-md-2 m-3">
+              <i class="fa fas fa-pencil-ruler"></i>
+            <div class="step step2">設計</div>
+          </div>
+          <div class="col-5 col-md-2 m-3">
+              <i class="fa far fa-building"></i>
+            <div class="step step3">建造</div>
+          </div>
+          <div class=" col-5 col-md-2 m-3">
+              <i class="fa fas fa-check-circle"></i>
+            <div class="step step4">修繕</div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="container-fluid textArea text-light">
       <div class="row align-items-center justify-content-md-center">
         <div class="col-12 col-md-5 col-xl-5">
           <div class="boss">
@@ -192,14 +207,17 @@
               by good design.
             </p>
             <footer class="blockquote-footer">
-              Great quote！<cite title="Source Title">
-                But I don't know who is this guy ...</cite
+              首席設計師<cite title="Source Title">
+                Ambrose Sebastian</cite
               >
             </footer>
           </blockquote>
         </div>
       </div>
     </div>
+
+    <!-- 123 -->
+
 
     <!-- script -->
     <script
@@ -218,6 +236,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script></script>
+    <script>
+      $(`navbar-Home`).click(function () {
+        $(html, body).animate({ scrollTop: $(`#2`).offset().top }, 1500);
+      });
+    </script>
   </body>
 </html>
