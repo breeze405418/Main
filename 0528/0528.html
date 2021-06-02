@@ -18,7 +18,7 @@
     <header>
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand navbar-Home " href="#"
+        <a class="navbar-brand" href="#" id="Home"
           ><img
             src="./css/pic/dk02.jpg"
             width="50"
@@ -48,8 +48,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-About text-warning" href="#"
-                >關於我們</a
+              <a class="nav-link  text-warning" 
+              id="navbar-About"
+              href="#Aboutus"
+                >關於</a
               >
             </li>
             <li class="nav-item dropdown">
@@ -75,7 +77,7 @@
             <li class="nav-item">
               <a class="nav-link text-warning navbar-Contact" href="#">聯絡我們</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a
                 class="nav-link disabled"
                 href="#"
@@ -83,7 +85,7 @@
                 aria-disabled="true"
                 >Disabled</a
               >
-            </li> -->
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input
@@ -99,7 +101,10 @@
         </div>
       </nav>
     </header>
+
+
     <!-- slide -->
+ <div class="container">
     <div
       id="myCarousel"
       class="carousel slide carousel-fade"
@@ -159,37 +164,38 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
     <!-- 流程塊 -->
-    <div class="container About">
+    <div class="container" id="Aboutus">
       <div class="row">
         <div class="col">
-          <div class="mt-4 mb-5 ">
-            <h1 class="text-warning">關於我們</h1>
+          <div class="my-4">
+            <h1 class="text-warning my-3">關於我們</h1>
             <p>
               不要先入為主覺得建築很複雜，實際上，建築可能比你想的還要更複雜，建築的出現，必將帶領人類走向更高的巔峰。<br>
               我相信有情感的建築“建築”的生命就是它的美。這對人類是很重要的。對一個問題如果有許多解決方法，其中的那種給使用者傳達美和情感的就是建築。
             </p>
         <div class="Process row justify-content-around">
-          <div class="col-5 col-md-2 m-3 " >
+          <div class="col-5 col-md-2 " >
               <i class="fa fas fa-clipboard-check"></i>
             <div class="step step1">企劃</div>
           </div>
-          <div class="col-5 col-md-2 m-3">
+          <div class="col-5 col-md-2 ">
               <i class="fa fas fa-pencil-ruler"></i>
             <div class="step step2">設計</div>
           </div>
-          <div class="col-5 col-md-2 m-3">
+          <div class="col-5 col-md-2 ">
               <i class="fa far fa-building"></i>
             <div class="step step3">建造</div>
           </div>
-          <div class=" col-5 col-md-2 m-3">
+          <div class=" col-5 col-md-2 ">
               <i class="fa fas fa-check-circle"></i>
             <div class="step step4">修繕</div>
           </div>
         </div>
       </div>
     </div>
-        <div class="container-fluid textArea text-light">
+    <div class="container-fluid textArea text-light">
       <div class="row align-items-center justify-content-md-center">
         <div class="col-12 col-md-5 col-xl-5">
           <div class="boss">
@@ -202,7 +208,7 @@
         </div>
         <div class="bossText col-12 col-md-5 col-xl-7">
           <blockquote class="blockquote">
-            <p class="mb-0">
+            <p class="mb-3">
               Good buildings come from good people and all problems are solved
               by good design.
             </p>
@@ -215,10 +221,21 @@
         </div>
       </div>
     </div>
+    <img src="./css/pic/longlogo.jpg" class="img-fluid longlogo" alt="Responsive image">
+    <!-- 關於我們 -->
+    <div class="container connection">
+      <div class="row">
+        <div class="col">
+            <h1 class="text-warning my-3">聯絡我們</h1>
+            <img src="./css/pic/dk01.jpg" class="bottomlogo" alt="longlogo">
+            <figcaption class="figure-caption text-center my-4 bottomcon"><i class="far fa-envelope"> ：breeze405418@gmail.com</i></figcaption>
+      </div>
+    </div>
 
-    <!-- 123 -->
-
-
+    <!-- footer -->
+    <div class="footer">
+      <p class="copyright">Copyright © Lin All rights reserved.</p>
+    </div>
     <!-- script -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -236,10 +253,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      $(`navbar-Home`).click(function () {
-        $(html, body).animate({ scrollTop: $(`#2`).offset().top }, 1500);
-      });
-    </script>
+    <script src="./js/0528.js"></script>
   </body>
 </html>
