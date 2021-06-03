@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Felix Design</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage callback function." />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,callbac,function,event"
+    />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="Felix.css" />
+  </head>
+  <body>
+    <div class="profile">
+      <a href="#firstPage">
+        <img src="./pic/F-logo.jpg" alt="F-logo" />
+        <h2 class="Toptitle">Felix Design</h2>
+      </a>
+    </div>
+    <ul id="menu">
+      <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Skill</a></li>
+      <li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+      <div class="section" id="section1">
+        <div class="intro">
+          <h1 style="color: rgb(253, 253, 253)">Felix'sProfile</h1>
+          <p style="color: aliceblue">
+            Hello Nice to meet you!<br>
+            Web Design & FrontEnd Development
+          </p>
+          <a href="#secondPage">
+            <div class="mouse-icon">
+              <div class="wheel"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="intro">
+          <img src="./pic/demopic.jpg" style="height: 300px" alt="Cool" />
+          <h1>From the callbacks</h1>
+          <p>
+            Animation fired through fullPage.js callbacks, making use of css3
+            transitions.
+          </p>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <div class="intro">
+          <h1>Cool uh?</h1>
+          <p>Choose the best easing effect for your site!</p>
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="intro">
+          <img src="./pic/demopic.jpg" style="height: 300px" alt="Cool" />
+          <h1>From the callbacks</h1>
+          <p>
+            Animation fired through fullPage.js callbacks, making use of css3
+            transitions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+
+    <script type="text/javascript" src="../dist/fullpage.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Felix.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
