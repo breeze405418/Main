@@ -62,8 +62,6 @@ th {
   text-align: left;
 }
 h1,
-h4,
-h5,
 h6 {
   font-weight: normal;
   font-size: 100%;
@@ -79,11 +77,11 @@ acronym {
 }
 
 /* Custom CSS
- * --------------------------------------- arial, helvetica; */
+ * ---------------------------------------  */
 
 body {
   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
   user-select: none;
 }
 
@@ -92,13 +90,28 @@ h1 {
 }
 h3 {
   font-size: 4em;
-  color: rgba(0, 80, 100,1);
+  color: rgba(0, 80, 100, 1);
   left: 130%;
   position: relative;
   transition: all 400ms ease;
 }
+h4 {
+  font-size: 1.5em;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+}
+h5 {
+  font-size: 4em;
+  line-height: 100px;
+  color: rgb(255, 255, 255);
+}
+.fas {
+  font-size: 3.5em;
+  color: rgb(0, 132, 255);
+}
 
-h1,p {
+h1,
+p {
   color: aliceblue;
 }
 p {
@@ -121,14 +134,12 @@ p {
   width: 90px;
   margin: 10px 5px;
   color: #000;
-  background: #fff;
   background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 10px;
   border-radius: 50px;
 }
 #menu li.active {
-  background: rgb(7, 76, 94);
-  color: #fff;
+  background: rgb(0, 80, 100);
 }
 #menu li a {
   color: rgb(0, 80, 100);
@@ -137,7 +148,7 @@ p {
   color: rgb(0, 80, 100);
 }
 #menu li:hover {
-  background: rgb(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 #menu li a,
 #menu li.active a {
@@ -184,6 +195,10 @@ p {
   width: 40px;
   height: 40px;
 }
+
+#section4 img{
+  width: 300px;
+}
 /* Demos Menu
  * --------------------------------------- */
 
@@ -192,12 +207,17 @@ p {
 	  var console = { log: function() {} };
  </script>
 <![endif]--> */
-#section1,#section2,#section3 {
+#section1,
+#section2,
+#section3,
+#section4 {
   position: relative;
 }
 
-
-#section1:after,#section2:after,#section3:after {
+#section1:after,
+#section2:after,
+#section3:after
+ {
   content: "";
   display: block;
   width: 100%;
@@ -205,19 +225,22 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  
-  background-size: cover;
+  background-size: cover !important ;
   opacity: 0.3;
 }
-#section1:after{
+#section1:after {
   background: url(./pic/page1-2.jpg) no-repeat center center;
 }
-#section2:after{
+#section2:after {
   background: url(./pic/page2-1.jpg) no-repeat center center;
 }
-#section3:after{
+#section3::after {
   background: url(./pic/skill-1.png) no-repeat center center;
 }
+#section4 {
+  background: url(./pic/footer.jpg) no-repeat center center;
+}
+
 
 .fakehr {
   border-top: 3px solid rgb(0, 80, 100);
@@ -227,19 +250,58 @@ p {
 
 .contentfakehr {
   border-top: 3px solid rgba(255, 255, 255, 0.3);
-  height: 20px;
+  width: 30% !important;
+  left: 130%;
+  position: relative;
+  transition: all 600ms ease;
+}
+.s3hr {
+  border-top: 3px solid rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  width: 30% !important;
   left: 130%;
   position: relative;
   transition: all 600ms ease;
 }
 
 .content {
-  opacity: 0;
   width: 600px;
   transition: all 400ms ease;
 }
-
-
+.skillbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  transition: all 400ms ease;
+}
+.box {
+  width: 33%;
+}
+.footer {
+  transform: translate(0%,30%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.copyright {
+  font-size: 1em;
+  font-family: Helvetica, Arial;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.contact{
+  background-color: rgba(0, 80, 100, 0.5);
+  border-radius: 30px;
+  width: 50%;
+  margin: 0 auto;
+}
+.s4{
+  
+}
 
 /* 1.CSS用法如下 */
 /* #section3 .intro {
@@ -247,9 +309,6 @@ p {
   position: relative;
   transition: all 600ms ease;
 } */
-
-
-
 
 /**
 * Here we fire the animation for section 3.
@@ -260,7 +319,6 @@ p {
 /* body.fp-viewing-3rdPage #section3 .intro {
   left: 0%;
 } */
-
 
 .mouse-icon {
   position: absolute;
@@ -301,4 +359,3 @@ p {
     opacity: 0;
   }
 }
-

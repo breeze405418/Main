@@ -1,5 +1,5 @@
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#000000', '#000000', '#000000', 'whitesmoke', '#ccddff'],
+    sectionsColor: ['#333333', '#111111', '#000000', '#111111', '#000000'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
     menu: '#menu',
     afterLoad: function(origin, destination, direction){
@@ -20,16 +20,16 @@ var myFullpage = new fullpage('#fullpage', {
         //section 3
         if(destination.index == 2){
             document.querySelector('#section3').querySelector('h3').style.left = 0 + 'px';
-            document.querySelector('#section3').querySelector('.contentfakehr').style.left = 0 + 'px';
-            document.querySelector('#section3').querySelector('.content').style.opacity = 1;
+            document.querySelector('#section3').querySelector('.s3hr').style.left = 0 + 'px';
+            document.querySelector('#section3').querySelector('.skillbox').style.opacity = 1;
         
         }
 
         //back to original state
         else if(origin && origin.index == 2){
             document.querySelector('#section3').querySelector('h3').style.left = 130 + '%';
-            document.querySelector('#section3').querySelector('.contentfakehr').style.left = 130 + '%';
-            document.querySelector('#section3').querySelector('.content').style.opacity = 0;
+            document.querySelector('#section3').querySelector('.s3hr').style.left = 130 + '%';
+            document.querySelector('#section3').querySelector('.skillbox').style.opacity = 0;
         }
         
 
