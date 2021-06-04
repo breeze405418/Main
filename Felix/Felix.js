@@ -1,5 +1,5 @@
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#000000', '#192a56', '#192a56', 'whitesmoke', '#ccddff'],
+    sectionsColor: ['#000000', '#000000', '#000000', 'whitesmoke', '#ccddff'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
     menu: '#menu',
     afterLoad: function(origin, destination, direction){

@@ -92,7 +92,10 @@ h1 {
 }
 h3 {
   font-size: 4em;
-  color: rgba(15, 15, 15, 0.6);
+  color: rgba(0, 80, 100,1);
+  left: 130%;
+  position: relative;
+  transition: all 400ms ease;
 }
 
 h1,p {
@@ -156,7 +159,7 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Toptitle {
+.logofont {
   height: 55px;
   width: 170px;
   top: 0;
@@ -189,10 +192,12 @@ p {
 	  var console = { log: function() {} };
  </script>
 <![endif]--> */
-#section1 {
+#section1,#section2,#section3 {
   position: relative;
 }
-#section1:after {
+
+
+#section1:after,#section2:after,#section3:after {
   content: "";
   display: block;
   width: 100%;
@@ -200,12 +205,19 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  color: aqua;
-  background: url(./pic/page1-2.jpg) no-repeat center center;
+  
   background-size: cover;
   opacity: 0.3;
 }
-
+#section1:after{
+  background: url(./pic/page1-2.jpg) no-repeat center center;
+}
+#section2:after{
+  background: url(./pic/page2-1.jpg) no-repeat center center;
+}
+#section3:after{
+  background: url(./pic/skill-1.png) no-repeat center center;
+}
 
 .fakehr {
   border-top: 3px solid rgb(0, 80, 100);
@@ -226,17 +238,7 @@ p {
   width: 600px;
   transition: all 400ms ease;
 }
-#section2 h3 {
-  left: 130%;
-  position: relative;
-  transition: all 400ms ease;
-}
 
-#section3 h3 {
-  left: 130%;
-  position: relative;
-  transition: all 400ms ease;
-}
 
 
 /* 1.CSS用法如下 */
@@ -246,16 +248,6 @@ p {
   transition: all 600ms ease;
 } */
 
-
-#section4 {
-  background: url(./pic/page2.jpeg) no-repeat center center;
-  background-size: cover;
-}
-#section4 .intro {
-  left: 0%;
-  position: relative;
-  transition: all 1000ms ease;
-}
 
 
 
