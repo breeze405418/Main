@@ -1,6 +1,9 @@
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#333333', '#111111', '#000000', '#111111', '#000000'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+    navigationTooltips: ['Cover', 'About', 'Skill', 'Contact'],
+    navigation: true,
+    slidesNavigation: true,
     menu: '#menu',
     afterLoad: function(origin, destination, direction){
         //section 2
