@@ -327,6 +327,8 @@ p {
   left: 0%;
 } */
 
+/* 滑鼠滾動動畫圖標 */
+
 .mouse-icon {
   position: absolute;
   left: 50%;
@@ -366,6 +368,9 @@ p {
     opacity: 0;
   }
 }
+
+/* 滑鼠滾動動畫圖標 */
+
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
     background: rgb(0, 80, 100);
