@@ -197,7 +197,7 @@ p {
   height: 40px;
 }
 
-#section4 img{
+#section5 img{
   width: 300px;
 }
 /* Demos Menu
@@ -208,10 +208,7 @@ p {
 	  var console = { log: function() {} };
  </script>
 <![endif]--> */
-#section1,
-#section2,
-#section3,
-#section4 {
+.section{
   position: relative;
 }
 
@@ -239,8 +236,11 @@ p {
   background: url(./pic/skill-1.png) no-repeat center center;
 }
 #section4 {
+  background: url(./pic/page1-1.jpg) no-repeat center center;
+  
+}
+#section5 {
   background: url(./pic/footer.jpg) no-repeat center center;
-
 }
 
 
@@ -279,11 +279,34 @@ p {
   height: 300px;
   transition: all 400ms ease;
 }
+.worksbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 300px;
+  transition: all 400ms ease;
+
+}
+.wbox {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 35px;
+  transform: translate(0,20%);
+}
+a{
+  color: rgb(0, 80, 100);
+}
+
 .box {
-  width: 33%;
+  width: 400px;
+}
+.box img{
+  min-width:300px;
+  width: 100%;
 }
 .footer {
-  transform: translate(0%,70%);
+  transform: translate(0%,65%);
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
   padding-bottom: 300px;
@@ -309,6 +332,9 @@ p {
   width: 300px;
 }
 .s4{
+  background-color: #fff;
+}
+.slast{
   transform: translate(0,30%);
 }
 /* 1.CSS用法如下 */
@@ -387,6 +413,11 @@ p {
 .fp-slidesNav ul li a span {
   display: block;
 }
-
+  .worksbox{
+    display: inline-block;
+  }
+  .worksbox img{
+    display: none;
+  }
 }
   
