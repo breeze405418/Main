@@ -1,34 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div id="app">
-        <section>
-            <div class="container">
-                <div class="title">
-                    <img class="logo " :src="src" alt="">
-                    <h1>{{ title }}</h1>
-                </div>
-            </div>
-        </section>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script>
-    let data ={
-        src:'./logo.jpg',
-        title:'vue test'
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .left,
+    .right {
+      display: inline-block;
+      font-size: 0;
+      padding: 1rem;
+      background-color: #555;
+    }
+    .left::before {
+      content: "<";
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .right::before {
+      content: ">";
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .logo {
+      width: 400px;
+    }
+    #app {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 400px;
+    }
+    .title {
+      text-align: center;
+    }
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
     }
+    .menuItem {
+      width: 400px;
+     transform: translate(1.5, 1.5, 1);
+    }
+    .arrow {
+      width: 25px;
+    }
+  </style>
+  <body>
+    <div id="app">
+      <section>
+        <div class="container">
+          <div class="title">
+            <img class="logo" :src="src" alt="" />
+            <h1>{{ title }}</h1>
+            <div class="description">
+              <a
+                v-if="index != 0"
+                class="arrow left"
+                @click="changeIndex(-1)"
+              ></a>
+              <div
+                class="menuItem white"
+                
+              >
+                <span class="number">{{ index+1 }}</span>
+                <span class="type">{{ today.type}}</span>
+                <a class="title" target="vue-iron" :href="today.link"
+                  >{{today.title}}</a
+                >
+              </div>
+              <a
+                v-if="index != total-1"
+                class="arrow right"
+                @click="changeIndex(+1)"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"
+      integrity="sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let data = {
+        title: "vue test02",
+        src: "./logo.jpg",
+        index: 0,
+        menu: [
+          { type: "aaa", title: "111", link: "javascript:;" },
+          { type: "bbb", title: "222", link: "javascript:;" },
+          { type: "ccc", title: "333", link: "javascript:;" },
+          { type: "ddd", title: "444", link: "javascript:;" },
+          { type: "eee", title: "555", link: "javascript:;" },
+          { type: "fff", title: "666", link: "javascript:;" },
+          { type: "ggg", title: "777", link: "javascript:;" },
+          { type: "hhh", title: "888", link: "javascript:;" },
+          { type: "iii", title: "999", link: "javascript:;" },
+          { type: "jjj", title: "000", link: "javascript:;" },
+        ],
+      };
 
-    let vm = new Vue({
-        el:'#app',
-        data: data
-    })
-</script>
-</body>
+      let vm = new Vue({
+        el: "#app",
+        data: data,
+        computed: {
+          today() {
+            return this.menu[this.index];
+          },
+          total() {
+            return this.menu.length;
+          },
+        },
+        methods: {
+          changeIndex(change) {
+            this.index =
+              (this.index + change + this.menu.length) % this.menu.length;
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
