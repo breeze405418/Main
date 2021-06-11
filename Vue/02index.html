@@ -67,11 +67,11 @@
         <img class="logo" :src="src" alt="" />
         <div class="container">
           <div class="title">
-            <img class="pic" :src="today.pic" alt="" />
+            <img class="pic" :src="duck.pic" alt="" />
             <h1>{{ title }}</h1>
             <div class="description">
               <a
-                v-if="index != 0"
+                v-if="index > 0"
                 class="arrow left"
                 @click="changeIndex(-1)"
               ></a>
@@ -80,13 +80,13 @@
                 
               >
                 <span class="number">{{ index+1 }}</span>
-                <span class="type">{{ today.type}}</span>
-                <a class="title" target="vue-iron" :href="today.link"
-                  >{{today.title}}</a
+                <span class="type">{{ duck.type}}</span>
+                <a class="title" target="vue-iron" :href="duck.link"
+                  >{{duck.title}}</a
                 >
               </div>
               <a
-                v-if="index != total-1"
+                v-if="index < page-1"
                 class="arrow right"
                 @click="changeIndex(+1)"
               ></a>
@@ -123,10 +123,10 @@
         el: "#app",
         data: data,
         computed: {
-          today() {
+          duck() {
             return this.menu[this.index];
           },
-          total() {
+          page() {
             return this.menu.length;
           },
         },
