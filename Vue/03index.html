@@ -12,51 +12,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    .left,
-    .right {
-      display: inline-block;
-      font-size: 0;
-      padding: 1rem;
-      background-color: #555;
-    }
-    .left::before {
-      content: "<";
-      font-size: 1rem;
-      color: #ffffff;
-    }
-    .right::before {
-      content: ">";
-      font-size: 1rem;
-      color: #ffffff;
-    }
-    .logo {
-      width: 400px;
-    }
-    #app {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      width: 400px;
-    }
-    .title {
-      text-align: center;
-    }
-    .description {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .menuItem {
-      width: 400px;
-     transform: translate(1.5, 1.5, 1);
-    }
-    .arrow {
-      width: 25px;
-    }
+    
   </style>
   <body>
     <div id="app">
@@ -73,7 +29,6 @@
               ></a>
               <div
                 class="menuItem white"
-                
               >
                 <span class="number">{{ index+1 }}</span>
                 <span class="type">{{ today.type}}</span>
@@ -102,16 +57,16 @@
         src: "./logo.jpg",
         index: 0,
         menu: [
-          { type: "aaa", title: "111", link: "javascript:;",pic:"https://picsum.photos/id/680/600/400" },
-          { type: "bbb", title: "222", link: "javascript:;",pic:"https://picsum.photos/id/681/600/400"  },
-          { type: "ccc", title: "333", link: "javascript:;",pic:"https://picsum.photos/id/682/600/400"  },
-          { type: "ddd", title: "444", link: "javascript:;",pic:"https://picsum.photos/id/683/600/400"  },
+          { type: "aaa", title: "111", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400" },
+          { type: "bbb", title: "222", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "ccc", title: "333", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "ddd", title: "444", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
           { type: "eee", title: "555", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
-          { type: "fff", title: "666", link: "javascript:;",pic:"https://picsum.photos/id/685/600/400"  },
-          { type: "ggg", title: "777", link: "javascript:;",pic:"https://picsum.photos/id/686/600/400"  },
-          { type: "hhh", title: "888", link: "javascript:;",pic:"https://picsum.photos/id/687/600/400"  },
-          { type: "iii", title: "999", link: "javascript:;",pic:"https://picsum.photos/id/688/600/400"  },
-          { type: "jjj", title: "000", link: "javascript:;",pic:"https://picsum.photos/id/689/600/400"  },
+          { type: "fff", title: "666", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "ggg", title: "777", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "hhh", title: "888", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "iii", title: "999", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "jjj", title: "000", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
         ],
       };
 
