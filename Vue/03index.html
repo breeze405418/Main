@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>03雙向資料處理</title>
   </head>
   <style>
     * {
@@ -12,83 +12,84 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+    #app {
+      background-color: aliceblue;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header {
+      background-color: #aff;
+      text-align: center;
+    }
   </style>
   <body>
     <div id="app">
       <section>
         <div class="container">
           <div class="title">
-            <div class="input">Alex,男性,年齡為 20~30 歲間 <br>喜歡
-            打扣、電玩、遊日本,已成為頻道會員。</div>
+            <div class="input header">
+              {{ name }}，{{ sex }}性，年齡為 {{ age }}
+              <br/>
+              {{favor.length ? '喜歡':'' }}{{
+              favor.join('、') }}，{{ member ? '已':'未'}}成為頻道會員。
+            </div>
             <div class="menu">
               <table>
                 <tr>
-                  <td class="title">
-                    姓名:
-                  </td>
+                  <td class="title">姓名:</td>
                   <td>
-                    <input value="Alex" />
+                    <input v-model="name" />
                   </td>
                 </tr>
                 <tr>
-                  <td class="title">
-                    姓別:
-                  </td>
+                  <td class="title">姓別:</td>
                   <td>
-                    <input 
-                    type="radio"
-                    value="女" />
+                    <input type="radio" name="sex" value="女" v-model="sex" />
                     女
-                    <input 
-                    type="radio"
-                    value="男" />
+                    <input type="radio" name="sex" value="男" v-model="sex" />
                     男
                   </td>
                 </tr>
                 <tr>
-                  <td class="title">
-                    年齡:
-                  </td>
+                  <td class="title">年齡:</td>
                   <td>
-                  <select>
-                    <option>20歲以上</option>
-                    <option select>20~30歲間</option>
-                    <option>30~40歲間</option>
-                    <option>40歲以上</option>
-                  </select>
-                </td>
+                    <select v-model="age">
+                      <option>20歲以下</option>
+                      <option select>20~30歲間</option>
+                      <option>30~40歲間</option>
+                      <option>40歲以上</option>
+                    </select>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="title">
-                    興趣:
-                  </td>
+                  <td class="title">興趣:</td>
                   <td>
-                    <input 
-                    type="checkbox"
-                    value="打扣"
-                    checked                    
+                    <input
+                      type="checkbox"
+                      value="打扣"
+                      v-model="favor"
+                      checked
                     />打扣
-                    <input 
-                    type="checkbox"
-                    value="電玩"
-                    checked                    
+                    <input
+                      type="checkbox"
+                      value="電玩"
+                      v-model="favor"
+                      checked
                     />電玩
-                    <input 
-                    type="checkbox"
-                    value="遊日本"
-                    checked                    
+                    <input
+                      type="checkbox"
+                      value="遊日本"
+                      v-model="favor"
+                      checked
                     />遊日本
                   </td>
                 </tr>
                 <tr>
-                  <td class="title">
-                    會員
-                  </td>
+                  <td class="title">會員</td>
                   <td>
-                    <input type="checkbox"
-                    checked
-                    />加入
+                    <input type="checkbox" checked v-model="member" />加入
                   </td>
                 </tr>
               </table>
@@ -99,23 +100,77 @@
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"
+      integrity="sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w=="
+      crossorigin="anonymous"
     ></script>
     <script>
       let data = {
-        title: "test02",
-        src: "./css/pic/LOGO!.png",
-        index:0,
+        name: "Alex",
+        sex: "男",
+        age: "30~40歲間",
+        favor: ["打扣", "電玩", "遊日本"],
+        member: true,
         menu: [
-          { type: "type-A", title: "title-1", link: "javascript:;",pic:"https://picsum.photos/id/680/600/400" },
-          { type: "type-b", title: "title-2", link: "javascript:;",pic:"https://picsum.photos/id/681/600/400"  },
-          { type: "type-c", title: "title-3", link: "javascript:;",pic:"https://picsum.photos/id/682/600/400"  },
-          { type: "type-d", title: "title-4", link: "javascript:;",pic:"https://picsum.photos/id/683/600/400"  },
-          { type: "type-e", title: "title-5", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
-          { type: "type-f", title: "title-6", link: "javascript:;",pic:"https://picsum.photos/id/685/600/400"  },
-          { type: "type-g", title: "title-7", link: "javascript:;",pic:"https://picsum.photos/id/686/600/400"  },
-          { type: "type-h", title: "title-8", link: "javascript:;",pic:"https://picsum.photos/id/687/600/400"  },
-          { type: "type-i", title: "title-9", link: "javascript:;",pic:"https://picsum.photos/id/688/600/400"  },
-          { type: "type-j", title: "title-0", link: "javascript:;",pic:"https://picsum.photos/id/689/600/400"  },
+          {
+            type: "type-A",
+            title: "title-1",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/680/600/400",
+          },
+          {
+            type: "type-b",
+            title: "title-2",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/681/600/400",
+          },
+          {
+            type: "type-c",
+            title: "title-3",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/682/600/400",
+          },
+          {
+            type: "type-d",
+            title: "title-4",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/683/600/400",
+          },
+          {
+            type: "type-e",
+            title: "title-5",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/684/600/400",
+          },
+          {
+            type: "type-f",
+            title: "title-6",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/685/600/400",
+          },
+          {
+            type: "type-g",
+            title: "title-7",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/686/600/400",
+          },
+          {
+            type: "type-h",
+            title: "title-8",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/687/600/400",
+          },
+          {
+            type: "type-i",
+            title: "title-9",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/688/600/400",
+          },
+          {
+            type: "type-j",
+            title: "title-0",
+            link: "javascript:;",
+            pic: "https://picsum.photos/id/689/600/400",
+          },
         ],
       };
 
