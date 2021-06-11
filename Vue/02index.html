@@ -29,7 +29,10 @@
       font-size: 1rem;
       color: #ffffff;
     }
-    .logo {
+    .pic {
+      width: 400px;
+    }
+    .logo{
       width: 400px;
     }
     #app {
@@ -61,9 +64,10 @@
   <body>
     <div id="app">
       <section>
+        <img class="logo" :src="src" alt="" />
         <div class="container">
           <div class="title">
-            <img class="logo" :src="today.pic" alt="" />
+            <img class="pic" :src="today.pic" alt="" />
             <h1>{{ title }}</h1>
             <div class="description">
               <a
@@ -98,20 +102,20 @@
     ></script>
     <script>
       let data = {
-        title: "vue test02",
-        src: "./logo.jpg",
+        title: "test02",
+        src: "./css/pic/LOGO!.png",
         index: 0,
         menu: [
-          { type: "aaa", title: "111", link: "javascript:;",pic:"https://picsum.photos/id/680/600/400" },
-          { type: "bbb", title: "222", link: "javascript:;",pic:"https://picsum.photos/id/681/600/400"  },
-          { type: "ccc", title: "333", link: "javascript:;",pic:"https://picsum.photos/id/682/600/400"  },
-          { type: "ddd", title: "444", link: "javascript:;",pic:"https://picsum.photos/id/683/600/400"  },
-          { type: "eee", title: "555", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
-          { type: "fff", title: "666", link: "javascript:;",pic:"https://picsum.photos/id/685/600/400"  },
-          { type: "ggg", title: "777", link: "javascript:;",pic:"https://picsum.photos/id/686/600/400"  },
-          { type: "hhh", title: "888", link: "javascript:;",pic:"https://picsum.photos/id/687/600/400"  },
-          { type: "iii", title: "999", link: "javascript:;",pic:"https://picsum.photos/id/688/600/400"  },
-          { type: "jjj", title: "000", link: "javascript:;",pic:"https://picsum.photos/id/689/600/400"  },
+          { type: "type-A", title: "title-1", link: "javascript:;",pic:"https://picsum.photos/id/680/600/400" },
+          { type: "type-b", title: "title-2", link: "javascript:;",pic:"https://picsum.photos/id/681/600/400"  },
+          { type: "type-c", title: "title-3", link: "javascript:;",pic:"https://picsum.photos/id/682/600/400"  },
+          { type: "type-d", title: "title-4", link: "javascript:;",pic:"https://picsum.photos/id/683/600/400"  },
+          { type: "type-e", title: "title-5", link: "javascript:;",pic:"https://picsum.photos/id/684/600/400"  },
+          { type: "type-f", title: "title-6", link: "javascript:;",pic:"https://picsum.photos/id/685/600/400"  },
+          { type: "type-g", title: "title-7", link: "javascript:;",pic:"https://picsum.photos/id/686/600/400"  },
+          { type: "type-h", title: "title-8", link: "javascript:;",pic:"https://picsum.photos/id/687/600/400"  },
+          { type: "type-i", title: "title-9", link: "javascript:;",pic:"https://picsum.photos/id/688/600/400"  },
+          { type: "type-j", title: "title-0", link: "javascript:;",pic:"https://picsum.photos/id/689/600/400"  },
         ],
       };
 
