@@ -80,4 +80,22 @@ nav{
     .landing{
         flex-direction:column ;
     }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li a{
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transition: all .5s ease .2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all .5s ease .4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all .5s ease .6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
 }
