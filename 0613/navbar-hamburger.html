@@ -26,7 +26,19 @@
           <h1>Dots</h1>
       </section>
   
-      <script src="./0613.js"></script>
+      <script>
+          const hamburger = document.querySelector('.hamburger');
+const navlinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+
+hamburger.addEventListener('click',()=>{
+    navlinks.classList.toggle("open");
+    links.forEach(link=>{
+        link.classList.toggle("fade")
+    });
+})
+      </script>
     
 </body>
 </html>

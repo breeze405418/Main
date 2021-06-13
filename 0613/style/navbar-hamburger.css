@@ -79,15 +79,15 @@ nav {
   .nav-links li a {
     font-size: 25px;
   }
-  .nav-links li li:nth-child(1) {
+  .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
   }
-  .nav-links li li:nth-child(2) {
+  .nav-links li:nth-child(2) {
     -webkit-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
   }
-  .nav-links li li:nth-child(3) {
+  .nav-links li:nth-child(3) {
     -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
