@@ -3,7 +3,7 @@ $mainColor:#aaf;
 $SecColor:#fff;
 // 樣式:$name;
 
-// _繼承(Extend)  %被繼承的樣式
+// _繼承(Extend)  %被繼承的樣式  (直接加入element
 %aButton{
   text-decoration: none;
   display: block;
@@ -17,7 +17,7 @@ $SecColor:#fff;
 }
 // 樣式:line(n);
 
-// _混用(Mixin)
+// _混用(Mixin)ex1 (變相加入Element
 @mixin aButton() {
   text-decoration: none;
   display: block;
@@ -25,6 +25,19 @@ $SecColor:#fff;
 // 樣式:{
 //   @include aButton();
 // }
+// _混用(Mixin)ex2
+@mixin flexCenter($direction, $background) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}
+// 樣式:{
+//   @include flexCenter(cloumn or row, background);
+// }
+
+// @import "scssName"; (導入scss
 
 * {
   margin: 0;
