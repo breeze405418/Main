@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/navbar-hamburger.css">
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+  
+      <section class="landing">
+          <img src="" alt="">
+          <h1>Dots</h1>
+      </section>
+  
+      <script>
+          const hamburger = document.querySelector('.hamburger');
+const navlinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+
+hamburger.addEventListener('click',()=>{
+    navlinks.classList.toggle("open");
+    links.forEach(link=>{
+        link.classList.toggle("fade")
+    });
+})
+      </script>
+    
+</body>
+</html>
