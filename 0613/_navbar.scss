@@ -1,3 +1,24 @@
+// _變數(Variable) $name:數值;
+$mainColor:#aaf;
+$SecColor:#fff;
+$baseLineHeight:10px;
+// 樣式:$name;
+// _繼承(Extend)  %被繼承的樣式
+%aButton{
+  text-decoration: none;
+  display: block;
+  padding: 0;
+}
+// 樣式:@extend %aButton
+// _函式(Function)
+@function line($count:1){
+  @return $baseLineHeight*$count;
+}
+// 樣式:line(n);
+// _混用(Mixin)
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +33,7 @@ nav {
   .logo {
     text-decoration: none;
     color: #fff;
-    background-color: #27ae60;
+    background-color: $mainColor;
     font-size: 30px;
     font-weight: bold;
     padding-top: 10px;
@@ -20,7 +41,7 @@ nav {
   }
   .nav-links {
     text-align: right;
-    background: #27ae60;
+    background: $mainColor;
     padding: 10px 30px;
     border-bottom-left-radius: 18px;
     ul {

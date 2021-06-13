@@ -20,7 +20,7 @@ nav {
 nav .logo {
   text-decoration: none;
   color: #fff;
-  background-color: #27ae60;
+  background-color: #aaf;
   font-size: 30px;
   font-weight: bold;
   padding-top: 10px;
@@ -29,7 +29,7 @@ nav .logo {
 
 nav .nav-links {
   text-align: right;
-  background: #27ae60;
+  background: #aaf;
   padding: 10px 30px;
   border-bottom-left-radius: 18px;
 }
