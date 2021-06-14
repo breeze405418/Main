@@ -1,0 +1,25 @@
+
+    $('#link1').click(function(){
+        $('#About').toggle(400);
+        $('#Skill').hide(400);
+        $('#Works').hide(400);
+        $('#Contact').hide(400);
+    })
+    $('#link2').click(function(){
+        $('#Skill').toggle(400);
+        $('#About').hide(400);
+        $('#Works').hide(400);
+        $('#Contact').hide(400);
+    })
+    $('#link3').click(function(){
+        $('#Works').toggle(400);
+        $('#Skill').hide(400);
+        $('#About').hide(400);
+        $('#Contact').hide(400);
+    })
+    $('#link4').click(function(){
+        $('#Contact').toggle(400);
+        $('#Skill').hide(400);
+        $('#Works').hide(400);
+        $('#About').hide(400);
+    })
