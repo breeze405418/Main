@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05篩選資料轉換</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #app {
+      background-color: aliceblue;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header {
+      background-color: #aff;
+      text-align: center;
+    }
+  </style>
+<body>
+    <div id="app">
+        <section>
+          <div class="container">
+            <div class="title">
+              <div class="input" style="font-size: 0px">
+                <select v-model="input.type">
+                  <option>全部</option>
+                  <option>主廚的話</option>
+                  <option>餐具擺盤</option>
+                  <option>開胃餐點</option>
+                  <option>風味沙拉</option>
+                  <option>總會拼盤</option>
+                  <option>用餐插曲</option>
+                  <option>主廚推薦</option>
+                </select>
+                <input type="text" v-model.trim="input.title"/>
+              </div>
+              <div class="menu">
+                <div 
+                class="menuItem" 
+                v-for="(item,index) in titleMenu">
+                  <span class="number">{{index+1}}</span>
+                  <span class="type">{{item.type}}</span>
+                  <a 
+                  :href="item.link" 
+                  target="vue-iron" 
+                  class="title">
+                  {{item.title}}
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"
+      integrity="sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./05index.js"></script>
+</body>
+</html>

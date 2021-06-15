@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06互動式資料表單</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #app {
+      background-color: aliceblue;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+<body>
+    <div id="app">
+        <section>
+          <div class="container">
+            <div class="title">
+              <div class="input" style="font-size: 0px">
+                <select v-model="input.type">
+                  <option :value="null">請選擇</option>
+                  <option v-for="item in typeList.sort">{{item}}</option>
+                </select>
+                <select style="width: 320px;" v-model="input.title">
+                <option :value="null">請選擇</option>
+                <option v-for="item in titleList.sort">{{item}}</option>
+                </select>
+              </div>
+              <div class="description">
+                <div 
+                  v-if="content"
+                  class="menuItem white" 
+                  style="transform: scale3d(1.5,1.5,1);"
+                  >
+                    <span class="number">{{content.index+1}}</span>
+                    <a 
+                    :href="content.link" 
+                    target="vue-iron" 
+                    class="title">
+                    {{content.link}}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"
+      integrity="sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./06index.js"></script>
+</body>
+</html>
