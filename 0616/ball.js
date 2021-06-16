@@ -52,7 +52,7 @@ Ball.prototype.update = function() {
     ctx.fillStyle = 'rgba(0,0,0,0.25)';
     ctx.fillRect(0,0,width,height);
   
-    while(balls.length < 2000) {
+    while(balls.length < 20) {
       var ball = new Ball();
       balls.push(ball);
     }
