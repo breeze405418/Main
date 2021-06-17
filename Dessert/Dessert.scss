@@ -1,6 +1,4 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-$black:#000;
+@import "../Dessert/node_modules/bootstrap/scss/functions";
+@import "../Dessert/helpers/variables";
+@import "../Dessert/node_modules/bootstrap/scss/bootstrap.scss";
 
-body{
-    background-color: #fff;
-}
