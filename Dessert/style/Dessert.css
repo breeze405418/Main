@@ -4568,9 +4568,9 @@ textarea.form-control-lg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 30px;
-  padding-right: 42px;
+  padding-right: 0px;
   padding-bottom: 30px;
-  padding-left: 42px;
+  padding-left: 0px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -13369,4 +13369,12 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+nav {
+  color: #3F5D45;
+  font-size: 1rem;
+}
+
+.banner {
+  max-width: 940px;
 }/*# sourceMappingURL=Dessert.css.map */
