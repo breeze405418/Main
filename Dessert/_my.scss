@@ -1,3 +1,14 @@
+@media screen and (max-width:768px)
+{
+    .topic{
+        width: 125px;
+    }
+    .text{
+        height: 180px;
+    }
+}
+
+
 .bpic{
 max-width: 940px;
 height: 496px;
@@ -7,6 +18,47 @@ background-position: center;
 margin-bottom: 40px;
 }
 .carts{
-    color:$primary
-
+color:$primary;
 }
+
+///////////////
+ 
+.topic{
+background: rgb(63, 93, 69,.6) 0% 0% no-repeat padding-box ;
+opacity: 1;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+margin-right: .17px;
+width: 259.67px;
+transition: .3s;
+}
+.topic:hover{
+background: rgb(255, 225, 128,.2) ;
+}
+
+.text{
+font: normal normal 600 24px/30px PingFang TC;
+padding-top: 62.98px;
+height: 256px;
+writing-mode: vertical-rl;
+color: #FFFFFF;
+letter-spacing: 10px;
+}
+.topic_area {
+transform: translateY(-60%);
+}
+
+//無法導入background-image
+.topic:nth-child(1) .blur_bg {
+background-image: url("../Dessert/images/banner-pic1.jpg");
+}
+
+.topic:nth-child(2) .blur_bg {
+background-image: url("../Dessert/images/banner-pic1.jpg");
+}
+
+.topic:nth-child(3) .blur_bg {
+background-image: url("../Dessert/images/banner-pic1.jpg");
+}
+//無法導入background-image
+////////////////////////
