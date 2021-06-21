@@ -203,23 +203,20 @@ body {
 .slogan1 {
   width: 88.94px;
   height: 307.15px;
-  background-image: url(./images/slogan1.svg);
-  background-size: cover;
-  background-position: center center;
 }
 
 .read {
   writing-mode: vertical-rl;
-  width: 256px;
   padding-top: 90px;
+  
 }
 .read p {
-  font: normal normal 300 16px/16px PingFang TC;
+  font: normal normal 300 16px/24px PingFang TC;
   color: #8da291;
   letter-spacing: 0px;
   opacity: 1;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 40px;
   height: 310px;
 }
 .midcake2 {
@@ -232,9 +229,6 @@ body {
 .slogan2 {
   width: 88.94px;
   height: 307.15px;
-  background-image: url(./images/slogan2.svg);
-  background-size: cover;
-  background-position: center center;
 }
 .btreason {
   height: 380px;
@@ -242,14 +236,14 @@ body {
   margin-bottom: 38px;
 }
 .foods {
-  width: 300px;
-  height: 436px;
   margin-bottom: 60px;
 }
-
+.product{
+  display: flex;
+  justify-content: space-between;
+}
 .food_pic {
   position: relative;
-  width: 300px;
 }
 .goodtoday {
   width: 36px;
@@ -263,7 +257,6 @@ body {
   transition: 0.5s;
 }
 .goodtoday p {
-  text-align: center;
   font: normal normal 600 16px/20px PingFang TC;
   writing-mode: vertical-rl;
   letter-spacing: 5px;
@@ -312,9 +305,7 @@ body {
   cursor: default;
 }
 .addtocarts {
-  text-align: center;
   font: normal normal 600 24px/20px PingFang TC;
-  letter-spacing: 0px;
   color: #3f5d45;
   height: 65px;
   background-color: #eaf0ed;
@@ -330,6 +321,7 @@ body {
   height: 116px;
   background-color: #3f5d45;
 }
+
 .mail_sweet {
   margin-top: 35px;
 }
@@ -344,6 +336,9 @@ body {
   margin-left: auto;
   width: 100%;
   max-width: 780px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .mail_box {
   margin-top: 30px;
@@ -380,7 +375,9 @@ body {
   background-color: #eaf0ed;
 }
 .footer2_Left {
-  height: 249px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 210px;
   margin-top: 38.9px;
 }
@@ -390,17 +387,23 @@ body {
   font: normal normal normal 16px/24px Helvetica Neue;
 }
 .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
 }
 .footer3 img {
   margin-right: 8px;
   cursor: pointer;
+  width:32px;
 }
 .ft3_p {
   font: normal normal normal 16px/19px Times;
   transform: translateY(7px);
 }
-
+.rwdpic{
+  display: none;
+}
 
 @media screen and (max-width:768px) {
     .carts{
@@ -450,5 +453,143 @@ body {
     .nav-links li a{
         font-size: 25px;
     }
+    .container{
+        padding: 0;
+    }
 
+    .topic_area {
+      transform: translateY(0);
+      margin-bottom: 0px;
+    }
+    .o_banner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:0px;
+      }
+
+
+    .slogan1{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        order: 1;
+    }
+    .slogan2 {
+      width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        order: 1;
+    }
+    .rwdpic{
+      display:inline-block;
+    }
+    .nrwdpic{
+      display: none;
+    }
+    .midcake1{
+        width: 100%;
+        height: 250px;
+        background-image: url(./images/middle-pic1.jpg);
+        background-size: cover;
+        background-position: center center;
+        order: 2;
+    }
+    .midcake2 {
+      width: 100%;
+        height: 250px;
+        background-image: url(./images/middle-pic2.jpg);
+        background-size: cover;
+        background-position: center center;
+        order: 2;
+    }
+    .read {
+      display: flex;
+      justify-content: center;
+      writing-mode: horizontal-tb;
+      padding-top: 30px;
+      height: 252px;
+      width: 100%;
+      height: 312px;
+      padding-top: 30px;
+      background-color: #eaf0ed;
+      order: 3;
+      
+    }
+    .read p {
+      font: normal normal 300 16px/24px PingFang TC;
+      color: #8da291;
+      letter-spacing: 0px;
+      opacity: 1;
+      font-size: 1rem;
+      line-height: 35px;
+      width: 315px;
+
+    }
+    .banner_bg {
+      background-color: #eaf0ed;
+      
+      position: absolute;
+      z-index: -1;
+    }
+    .btreason {
+      height: 120px;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    .product{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .foods {
+      margin-bottom: 30px;
+    }
+    .container780 {
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 780px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer1 {
+      width: 100%;
+      height: 186px;
+      background-color: #3f5d45;
+    }
+    .footer2_Left {
+      margin-right: auto;
+      padding-left: 30px;
+      align-items: flex-start;
+      height: 134px;
+      margin-top: 38.9px;
+    }
+    .footer2 {
+      width: 100%;
+      height: 311px;
+      background-color: #eaf0ed;
+    }
+
+
+    .ft3_p {
+      font: normal normal normal 16px/19px Times;
+      transform: translateY(-10px);
+    }
+    .footer3_icon{
+      margin-right: auto;
+      padding-left: 30px;
+      align-items: flex-start;
+    }
 }
+
