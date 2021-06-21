@@ -80,43 +80,40 @@ li {
 }
 /* CSSreset CSSreset CSSreset CSSreset CSSreset CSSreset */
 
-.logo{
-    cursor: pointer;
+.logo {
+  cursor: pointer;
 }
 
-.nav-links{
-    width: 276px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: 50px;
-
+.nav-links {
+  width: 276px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 .nav-links li {
-    color: #3F5D45;
-    padding: 15px 30px;
-    font: normal normal 600 16px PingFang TC;
+  color: #3f5d45;
+  padding: 15px 30px;
+  font: normal normal 600 16px PingFang TC;
   transition: 0.5s;
 }
 
-.nav-links li:hover{
-   background: #ffe180;
-  }
+.nav-links li:hover {
+  background: #ffe180;
+}
 
-  .carts {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    color: #3f5d45;
-    transition: 0.5s;
-  }
-  .carts:hover {
-    background: #ffe180;
-  }
-  .carts .fas {
-    line-height: 50px;
-  }
-
-
+.carts {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #3f5d45;
+  transition: 0.5s;
+}
+.carts:hover {
+  background: #ffe180;
+}
+.carts .fas {
+  line-height: 50px;
+}
 
 body {
   position: relative;
@@ -209,7 +206,6 @@ body {
 .read {
   writing-mode: vertical-rl;
   padding-top: 90px;
-  
 }
 .read p {
   font: normal normal 300 16px/24px PingFang TC;
@@ -239,7 +235,7 @@ body {
 .foods {
   margin-bottom: 60px;
 }
-.product{
+.product {
   display: flex;
   justify-content: space-between;
 }
@@ -397,200 +393,194 @@ body {
 .footer3 img {
   margin-right: 8px;
   cursor: pointer;
-  width:32px;
+  width: 32px;
 }
 .ft3_p {
   font: normal normal normal 16px/19px Times;
   transform: translateY(7px);
 }
-.rwdpic{
+.rwdpic {
   display: none;
 }
 
-@media screen and (max-width:768px) {
-    .carts{
-        width: 70px;
-        height: 70px;
-        font-size: 30px;
-        line-height: 70px;
-        color: #3f5d45;
-        transition: 0.5s;
-      }
-    .line{
-        width: 30px;
-        height: 3px;
-        background: #3F5D45;
-        margin: 7px;
-    }
-    nav{
-        height: 100px;
-    }
-    .hamburger{
-        cursor: pointer;
-        z-index: 2;
-    }
-    .nav-links{
-        position: fixed;
-        background: #FFE180;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        transform: translateY(10%);
-        clip-path: circle(100px at -100% -10%);
-        -webkit-clip-path:circle(100px at -100% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        z-index: 1;
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 50% -40%);
-        -webkit-clip-path:circle(1000px at 50% -40%);
-        pointer-events: all;
-        z-index: 1;
+@media screen and (max-width: 768px) {
+  .carts {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    color: #3f5d45;
+    transition: 0.5s;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #3f5d45;
+    margin: 7px;
+  }
+  nav {
+    height: 100px;
+  }
+  .hamburger {
+    cursor: pointer;
+    z-index: 2;
+  }
+  .nav-links {
+    position: fixed;
+    background: #ffe180;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    transform: translateY(10%);
+    clip-path: circle(100px at -100% -10%);
+    -webkit-clip-path: circle(100px at -100% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 50% -40%);
+    -webkit-clip-path: circle(1000px at 50% -40%);
+    pointer-events: all;
+    z-index: 1;
+  }
+  .nav-links li {
+    font-size: 25px;
+    opacity: 1;
+  }
 
-    }
-    .nav-links li{
-      font-size: 25px;
-      opacity: 1;
-    }
-    
-    .container{
-        padding: 0;
-    }
+  .container {
+    padding: 0;
+  }
 
-    .topic_area {
-      transform: translateY(0);
-      margin-bottom: 0px;
-    }
-    .o_banner {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom:0px;
-      }
+  .topic_area {
+    transform: translateY(0);
+    margin-bottom: 0px;
+  }
+  .o_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
 
+  .slogan1 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    order: 1;
+  }
+  .slogan2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    order: 1;
+  }
+  .rwdpic {
+    display: inline-block;
+  }
+  .nrwdpic {
+    display: none;
+  }
+  .midcake1 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/middle-pic1.jpg);
+    background-size: cover;
+    background-position: center center;
+    order: 2;
+  }
+  .midcake2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/middle-pic2.jpg);
+    background-size: cover;
+    background-position: center center;
+    order: 2;
+  }
+  .read {
+    display: flex;
+    justify-content: center;
+    writing-mode: horizontal-tb;
+    padding-top: 30px;
+    height: 252px;
+    width: 100%;
+    height: 312px;
+    padding-top: 30px;
+    background-color: #eaf0ed;
+    order: 3;
+  }
+  .read p {
+    font: normal normal 300 16px/24px PingFang TC;
+    color: #8da291;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-size: 1rem;
+    line-height: 35px;
+    width: 315px;
+  }
+  .banner_bg {
+    background-color: #eaf0ed;
 
-    .slogan1{
-        width: 100%;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        order: 1;
-    }
-    .slogan2 {
-      width: 100%;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        order: 1;
-    }
-    .rwdpic{
-      display:inline-block;
-    }
-    .nrwdpic{
-      display: none;
-    }
-    .midcake1{
-        width: 100%;
-        height: 250px;
-        background-image: url(./images/middle-pic1.jpg);
-        background-size: cover;
-        background-position: center center;
-        order: 2;
-    }
-    .midcake2 {
-      width: 100%;
-        height: 250px;
-        background-image: url(./images/middle-pic2.jpg);
-        background-size: cover;
-        background-position: center center;
-        order: 2;
-    }
-    .read {
-      display: flex;
-      justify-content: center;
-      writing-mode: horizontal-tb;
-      padding-top: 30px;
-      height: 252px;
-      width: 100%;
-      height: 312px;
-      padding-top: 30px;
-      background-color: #eaf0ed;
-      order: 3;
-      
-    }
-    .read p {
-      font: normal normal 300 16px/24px PingFang TC;
-      color: #8da291;
-      letter-spacing: 0px;
-      opacity: 1;
-      font-size: 1rem;
-      line-height: 35px;
-      width: 315px;
+    position: absolute;
+    z-index: -1;
+  }
+  .btreason {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .foods {
+    margin-bottom: 30px;
+  }
+  .container780 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer1 {
+    width: 100%;
+    height: 186px;
+    background-color: #3f5d45;
+  }
+  .footer2_Left {
+    margin-right: auto;
+    padding-left: 30px;
+    align-items: flex-start;
+    height: 134px;
+    margin-top: 38.9px;
+  }
+  .footer2 {
+    width: 100%;
+    height: 311px;
+    background-color: #eaf0ed;
+  }
 
-    }
-    .banner_bg {
-      background-color: #eaf0ed;
-      
-      position: absolute;
-      z-index: -1;
-    }
-    .btreason {
-      height: 120px;
-      width: 100%;
-      margin-bottom: 0px;
-    }
-    .product{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .foods {
-      margin-bottom: 30px;
-    }
-    .container780 {
-      margin-right: auto;
-      margin-left: auto;
-      width: 100%;
-      max-width: 780px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .footer1 {
-      width: 100%;
-      height: 186px;
-      background-color: #3f5d45;
-    }
-    .footer2_Left {
-      margin-right: auto;
-      padding-left: 30px;
-      align-items: flex-start;
-      height: 134px;
-      margin-top: 38.9px;
-    }
-    .footer2 {
-      width: 100%;
-      height: 311px;
-      background-color: #eaf0ed;
-    }
-
-
-    .ft3_p {
-      font: normal normal normal 16px/19px Times;
-      transform: translateY(-10px);
-    }
-    .footer3_icon{
-      margin-right: auto;
-      padding-left: 30px;
-      align-items: flex-start;
-    }
+  .ft3_p {
+    font: normal normal normal 16px/19px Times;
+    transform: translateY(-10px);
+  }
+  .footer3_icon {
+    margin-right: auto;
+    padding-left: 30px;
+    align-items: flex-start;
+  }
 }
-
