@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello, world!</title>
+    <title>Sweetaste</title>
+    <link href="./images/logo.png" type="image/x-icon" rel="shortcut icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -13,84 +14,262 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      integrity="sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style/all.css" />
+    <link rel="stylesheet" href="./_my.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-md navbar-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img
-            src="/images/logo-all-dark.svg"
-            alt=""
-            class="logo-all"
-            height="40"
-          />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-lg-0 me-7">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">甜點</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">登入</a>
-            </li>
-          </ul>
-        </div>
-        <a href="#">
-          <div class="carts">
-            <span class="material-icons carts">shopping_cart</span>
-          </div>
-        </a>
-      </nav>
-    </div>
+    <nav class="container px-0 d-flex justify-content-between align-items-center">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="logo">
+        <a href=""><img src="./images/logo-all-dark.svg" width="219.5px" height="40px" alt=""></a>
+      </div>
+      <ul class="nav-links d-flex justify-content-center align-items-center">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">甜點</a></li>
+        <li><a href="#">登入</a></li>
+      </ul>
+      <a href="#" class="carts">
+        <i class="fas fa-shopping-cart "></i>
+      </a>
+    </nav>
+
+
+
+
     <!-- navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar -->
-    <div class="bpic" style="background-image: url('./images/banner.jpg');"></div>
+    <div
+      class="bpic"
+      style="background-image: url('./images/banner.jpg')"
+    ></div>
     <!-- bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  bcimg  -->
-    <div class="topic_area container d-flex justify-content-center align-items-center">
-      <div class="d-flex">
-        <div class="topic col-3 ">
-          <div class="blur_bg  d-flex justify-content-center align-items-center">
-            <div class="text" >
-              <p>本日精選</p>
-            </div>
-          </div>
+    <div class="topic_area container px-0 d-flex justify-content-center">
+      <div class="topic">
+        <div class="blur_bg"></div>
+        <div class="text d-flex justify-content-center align-items-center">
+          <p>本日精選</p>
         </div>
-        <div class="topic col-3 ">
-          <div class="blur_bg d-flex justify-content-center align-items-center">
-            <div class="text">
-              <p>本日精選</p>
-            </div>
-          </div>
+      </div>
+      <div class="topic">
+        <div class="blur_bg"></div>
+        <div class="text d-flex justify-content-center align-items-center">
+          <p>人氣推薦</p>
         </div>
-        <div class="topic col-3">
-          <div class="blur_bg d-flex justify-content-center align-items-center" >
-            <div class="text">
-              <p>本日精選</p>
-            </div>
-          </div>
+      </div>
+      <div class="topic">
+        <div class="blur_bg"></div>
+        <div class="text d-flex justify-content-center align-items-center">
+          <p>新品上市</p>
         </div>
       </div>
     </div>
-<!-- 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic -->
-    <div class="o_banner">
-
+    <!-- 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic 3pic -->
+    <div class="banner_bg"></div>
+    <div class="o_banner container d-flex justify-content-between">
+      <div class="midcake1"></div>
+      <div class="read">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+        <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+        <p><br /></p>
+        <p>轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        <p>古今多少事，都付笑談中。</p>
+      </div>
+      <div class="slogan1"></div>
+    </div>
+    <div class="banner_bg"></div>
+    <div class="o_banner container d-flex justify-content-between">
+      <div class="read">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+        <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+        <p><br /></p>
+        <p>轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        <p>古今多少事，都付笑談中。</p>
+      </div>
+      <div class="slogan2"></div>
+      <div class="midcake2"></div>
+    </div>
+    <!-- banner banner banner banner banner banner banner banner banner banner -->
+    <div
+      class="
+        btreason
+        container-fluid
+        d-flex
+        justify-content-center
+        align-items-center
+      "
+    >
+      <img src="./images/slogan3.svg" width="89.1" height="377.79" alt="" />
     </div>
 
-<!-- script script script script script script script script script script script -->
+    <div class="container d-flex justify-content-between">
+      <div class="foods">
+        <div class="food_pic">
+          <img src="./images/item1.jpg" width="300px" height="318px" alt="" />
+          <div class="goodtoday d-flex"><p>本日推薦</p></div>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="nandp d-flex">
+          <div
+            class="foods_name d-flex justify-content-center align-items-center"
+          >
+            焦糖馬卡龍
+          </div>
+          <div class="price d-flex justify-content-center align-items-center">
+            NT$ 450
+          </div>
+        </div>
+
+        <div
+          class="addtocarts d-flex justify-content-center align-items-center"
+        >
+          加入購物車
+        </div>
+      </div>
+      <div class="foods">
+        <div class="food_pic">
+          <img src="./images/item2.jpg" width="300px" height="318px" alt="" />
+          <div class="goodtoday d-flex"><p>本日推薦</p></div>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="nandp d-flex">
+          <div
+            class="foods_name d-flex justify-content-center align-items-center"
+          >
+            焦糖馬卡龍
+          </div>
+          <div class="price d-flex justify-content-center align-items-center">
+            NT$ 450
+          </div>
+        </div>
+
+        <div
+          class="addtocarts d-flex justify-content-center align-items-center"
+        >
+          加入購物車
+        </div>
+      </div>
+      <div class="foods">
+        <div class="food_pic">
+          <img src="./images/item3.jpg" width="300px" height="318px" alt="" />
+          <div class="goodtoday d-flex"><p>本日推薦</p></div>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="nandp d-flex">
+          <div
+            class="foods_name d-flex justify-content-center align-items-center"
+          >
+            焦糖馬卡龍
+          </div>
+          <div class="price d-flex justify-content-center align-items-center">
+            NT$ 450
+          </div>
+        </div>
+
+        <div
+          class="addtocarts d-flex justify-content-center align-items-center"
+        >
+          加入購物車
+        </div>
+      </div>
+    </div>
+    <!-- shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea -->
+
+    <div class="footer1">
+      <div
+        class="container780 d-flex justify-content-between align-items-center"
+      >
+        <div
+          class="mail_sweet d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="./images/logo-light.svg"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+          <p>訂閱你我的甜蜜郵件</p>
+        </div>
+        <div class="mail_box d-flex justify-content-center align-items-center">
+          <i
+            class="
+              fas
+              fa-envelope
+              mail_fas
+              d-flex
+              justify-content-end
+              align-items-center
+            "
+          ></i>
+          <input class="" type="text" />
+          <a href="#">
+            <i
+              class="
+                arrow
+                material-icons
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+              >arrow_forward</i
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- footer1mail footer1mail footer1mail footer1mail footer1mail footer1mail footer1mail footer1mail -->
+
+    <div class="footer2">
+      <div
+        class="container780 d-flex justify-content-between align-items-center"
+      >
+        <div class="footer2_Left d-flex flex-column justify-content-between">
+          <img
+            src="./images/logotype-lg-dark.svg"
+            width="171.22px"
+            height="26.6px"
+            alt=""
+          />
+          <p>
+            07-1234-5678 <br />
+            sweetaste@email.com <br />
+            800 高雄市新興區幸福路 520 號
+          </p>
+        </div>
+        <div class="footer2_right">
+          <img
+            src="./images/footer-slogan.svg"
+            width="59.28px"
+            height="218.69px"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="container780 d-flex justify-content-between align-items-center"
+      >
+        <div class="footer3 d-flex justify-content-center align-items-center">
+          <img src="./images/ic-line@.svg" width="32px" height="32px" alt="" />
+          <img
+            src="./images/ic-facebook.svg"
+            width="32px"
+            height="32px"
+            alt=""
+          />
+        </div>
+        <p class="ft3_p">&copy;2018 sweetaste* All Right Reserved</p>
+      </div>
+    </div>
+
+    <!-- script script script script script script script script script script script -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -106,5 +285,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="./Dessert .js"></script>
+
   </body>
 </html>
