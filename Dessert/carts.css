@@ -119,82 +119,130 @@ background: #ffe180;
 line-height: 50px;
 }
 /* navbar */
-.login_main{
+
+.carts_main{
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
-.login_left{
-  width: 390px;
-  height: 380px;
+.carts_right{
+  height: 246px; /*???*/
+  width: 300px;
   color:#EAF0ED ;
   background-color: #3F5D45;
   padding: 0;
+  position: relative;
+}
+.right_h3{
+  height: 65px;
+  font: normal normal 600 24px/20px PingFang TC;
+  margin-bottom: 8px;
+
+}
+.right_h3::before{
+  content: '';
+  border-bottom: 1px solid #EAF0ED;
+  width: 260px;
+  height: 65px;
+  position: absolute;
+}
+.carts_right li{
+  width: 264px;
+  display: flex;
+  justify-content: space-between;
+  font: normal normal 300 16px/20px PingFang TC;
+  margin-top: 8px;
+}
+.carts_right li:nth-last-child(1){
+  font: normal normal 600 20px/20px PingFang TC;
+  margin-top: 16px;
 }
 
 
-.left_h3{
-  height: 130px; 
-  font: normal normal 600 36px/36px PingFang TC;
-}
-.login_box {
-  margin-bottom:16px;
-  height: 56px;
-  }
-  
-  .login_box input {
-  width: 284px;
-  height: 56px;
-  font-size: 16px;
-  text-indent: 21px;
-  background: #EAF0ED;
-  }
-  ::placeholder {
-    color: #8DA291;
-    opacity: .7;
-  }
-  .form-groupz{
-    margin-top: 0px;
-    margin-left: 30px;
-    margin-bottom: 14px;
-  }
-
-  .login_submitz{
+  .carts_submitz{
     height: 65px;
     background-color: #FFE180;
     color: #3f5d45;
     font: normal normal 600 24px/20px PingFang TC;
     cursor: pointer;
     transition: .5s;
+    margin-top: 16px;
+
   }
-  .login_submitz:hover{
+  .carts_submitz:hover{
     background-color: #fae398;
   }
 
 
 
-.login_right{
-  width: 390px;
-  height: 350px;
-  background-color: #EAF0ED;
-  align-self: center;
+.left_h3{
+  width: 620px;
+  height: 65px;
+  background: #EAF0ED 0% 0% no-repeat padding-box;
+  font: normal normal 600 24px/20px PingFang TC;
+  margin-bottom: 13px;
 }
-.login_right li{
-  width: 330px;
-  height: 56px;
-  margin-bottom: 16px;
-  background-color: #fff;
+
+.carts_left li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EAF0ED;
 }
-.login_right ul,li{
+.carts_left li:nth-last-child(1){
+  border-bottom: 0px;
+}
+
+.carts_left .p_p{
+  width: 107px;
+  height: 53px;
   display: flex;
   flex-direction: column;
+}
+.d_block{
+  display: flex;
+}
+.d_block input{
+  cursor:default;
+}
+
+.block{
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #EAF0ED;
 }
-.right_h3{
-  height: 109px; 
-  font: 300 24px/36px PingFang TC;
-  cursor: default;
+.carts_left .price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 28px;
+
+}
+.dele{
+  cursor: pointer;
+}
+.p_pic{
+  width: 110px;
+  height: 110px;
+  background-size: cover;
+  background-position: center center;
+}
+.carts_left li:nth-child(1) .p_pic{
+  background-image: url(./images/p_item\ \(7\).jpg);
+}
+.carts_left li:nth-child(2) .p_pic{
+  background-image: url(./images/p_item\ \(5\).jpg);
+}
+.carts_left li:nth-child(3) .p_pic{
+  background-image: url(./images/p_item\ \(3\).jpg);
 }
 
 /* footer */
@@ -212,7 +260,9 @@ font: normal normal normal 20px/24px Helvetica Neue;
 margin-left: 20px;
 color: #eaf0ed;
 }
-
+.container{
+  max-width: 940px;
+}
 .container780 {
 margin-right: auto;
 margin-left: auto;
@@ -414,7 +464,7 @@ align-items: flex-start;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.login_left,.login_right{
+.carts_right{
   width: 100vw;
 }
 
@@ -423,45 +473,120 @@ align-items: flex-start;
   justify-content:center;
 }
 
-.right_h3 p{
-  display: none;
-}
-.right_h3{
-  height: 0px; 
-}
 
-.login_right li{
-  width: 125px;
-  background-color: #fff;
-  border-right: 1px solid #EAF0ED;
-}
-.login_right li:nth-child(1) img{
-  width: 83.4px;
-  height: 15.94px;
-}
-.login_right li:nth-child(2) img{
-  width: 72.64px;
-  height: 23.91px;
-}
-.login_right li:nth-child(3) img{
-  width: 74.41px;
-  height: 17.22px;
-}
-.login_right ul,li{
+
+
+
+
+
+
+
+
+
+.carts_main{
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-.login_right ul{
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+.carts_right{
+  height: 246px;
+  width: 100wh;
+  color:#3F5D45 ;
+  background-color: #FFFFFF;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right_h3{
+  height: 65px;
+  width: 315px;
+  font: normal normal 600 24px/20px PingFang TC;
+  background-color: #EAF0ED;
+
 }
 
-.login_right{
-  height: 116px;
-  background-color: #EAF0ED;
+.carts_right li{
+  width: 315px;
 }
+
+.right_h3::before{
+  border-bottom: 0px ;
+
+}
+
+
+  .carts_submitz{
+    width: 100vw;
+  }
+
+
+
+.left_h3{
+  width: 150vw;
+}
+
+
+
+.carts_left li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30.5px;
+  padding-bottom: 8.5px;
+  border-bottom: 1px solid #EAF0ED;
+}
+
+.carts_left .p_p{
+  align-items: center;
+  justify-content: center;
+  font: normal normal 300 20px/20px PingFang TC;
+}
+.d_block{
+  display: flex;
+}
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #EAF0ED;
+}
+.carts_left .price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 28px;
+
+}
+.p_pic{
+  width: 157px;
+  height: 106px;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 16px;
+  margin-left: 30px;
+}
+.carts_left li:nth-child(1) .p_pic{
+  width: 300px;
+  height: 150px;
+}
+.carts_left li:nth-child(2) .p_pic{
+  width: 300px;
+  height: 150px;
+}
+.carts_left li:nth-child(3) .p_pic{
+  width: 300px;
+  height: 150px;
+}
+
 
 }
 

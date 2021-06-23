@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/all.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./carts.css" />
   </head>
   <body>
     <nav
@@ -49,69 +49,87 @@
         <a href="./product.html"><li>甜點</li></a>
         <a href="./login.html"><li>登入</li></a>
       </ul>
-      <a href="./carts.html" class="carts">
+      <a href="#" class="carts">
         <i class="fas fa-shopping-cart"></i>
       </a>
     </nav>
 
     <!-- navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar -->
 
-    <div class="login_main container780 d-flex justify-content-center">
-        <div class="login_left">
+    <div class="carts_main px-0 container d-flex justify-content-between">
+        <div class=" carts_left">
           <div class="left_h3 d-flex justify-content-center align-items-center">
-            <p>會員登入</p>
+            <p>您的購物車</p>
           </div>
-          <ul class="d-flex flex-column">
+          <ul class=" d-flex flex-column">
             <li>
-              <div
-                class="
-                  login_box
-                  d-flex
-                  justify-content-center
-                "
-              >
-                <i class="iconset fas fa-user  
-                d-flex
-                justify-content-end
-                align-items-center">
-              </i>
-                <input type="text" placeholder="電子信箱 / 手機號碼" />
+              <div class="p_pic"></div>
+              <div class="p_p">
+                <P>焦糖瑪卡龍</P>
+                <p>NT$ 450</p>
               </div>
+              <div class="d_block">
+                <div class="block">-</div>
+                <input class="block"type="text" placeholder="2"disabled="disabled">
+                <div class="block">+</div>
+              </div>
+              
+              <div class="price">NT$ 900</div>
+              <div class="dele"><i class="far fa-trash-alt"></i></div>
             </li>
             <li>
-              <div
-                class="
-                  login_box
-                  d-flex
-                  justify-content-center
-                "
-              >
-              <i class="iconset fas fa-key
-              d-flex
-              justify-content-end
-              align-items-center"></i>
-                <input type="password" placeholder="請輸入使用者密碼"/>
+              <div class="p_pic"></div>
+              <div class="p_p">
+                <P>焦糖瑪卡龍</P>
+                <p>NT$ 450</p>
               </div>
+              <div class="d_block">
+                <div class="block">-</div>
+                <input class="block"type="text" placeholder="2" disabled="disabled">
+                <div class="block">+</div>
+              </div>
+              
+              <div class="price">NT$ 900</div>
+              <div class="dele"><i class="far fa-trash-alt"></i></div>
             </li>
-            <div class="form-groupz">
-              <input type="checkbox" class="form-check-input" id="Check1" />
-              <label class="form-check-label" for="Check1">記住我</label>
-            </div>
+            <li>
+              <div class="p_pic"></div>
+              <div class="p_p">
+                <P>焦糖瑪卡龍</P>
+                <p>NT$ 450</p>
+              </div>
+              <div class="d_block">
+                <div class="block">-</div>
+                <input class="block"type="text" placeholder="2"disabled="disabled">
+                <div class="block">+</div>
+              </div>
+              
+              <div class="price">NT$ 900</div>
+              <div class="dele"><i class="far fa-trash-alt"></i></div>
+            </li>
           </ul>
-          <div class=" login_submitz d-flex justify-content-center align-items-center">
-            <p>登入帳號</p>
+          
+        </div>
+        <div class="carts_right">
+          <div class="right_h3 d-flex justify-content-center align-items-center">
+            <p>訂單摘要</p>
+          </div>
+          <ul class="d-flex flex-column justify-content-between align-items-center">
+            <li>
+              <p>小計</p><p>NT$ 2,700</p>
+            </li>
+            <li>
+              <p>運費</p><p>NT$ 300</p>
+            </li>
+            <li>
+              <p>總計</p><p>NT$ 3,000</p>
+            </li>
+          </ul>
+          <div class=" carts_submitz d-flex justify-content-center align-items-center">
+            <p>結帳</p>
           </div>
         </div>
-        <div class="login_right">
-          <div class=" right_h3 d-flex justify-content-center align-items-center">
-            <p>─── 連結社群帳號 ───</p>
-          </div>
-          <ul>
-            <a href="https://www.facebook.com/home.php" target="_blank"><li><img src="./images/ic-facebook-logotype.svg" width="108.18px" height="20.68px" alt=""></li></a>
-            <a href="https://tw.yahoo.com/" target="_blank"><li><img src="./images/ic-google.svg" width="94.22px" height="31.02px" alt=""></li></a>
-            <a href="https://www.google.com/" target="_blank"><li><img src="./images/ic-yahoo.svg" width="96.52px" height="22.33px" alt=""></li></a>
-          </ul>
-        </div>
+      </div>
     </div>
 
     <!-- shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea shoppingarea -->
