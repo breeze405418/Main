@@ -179,7 +179,7 @@
     transform: translateY(10%);
   }
 
-  .progress,.progress70,.progress80,.progress90 ,.progress99{
+  .progress,.progress70,.progress80,.progress90 ,.progress99,.progress100{
     background: linear-gradient(to right top, #e09882, #ebbf6c);
     width: 100%;
     height: 25%;
