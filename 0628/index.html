@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林子翔</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./img/yt_logo.png" height="20px" alt="" />
+      <div class="nav_right">
+        <img src="./img/search.png" height="20px" alt="" />
+        <img src="./img/user.png" height="25px" alt="" />
+      </div>
+    </nav>
+   
+    <div class="btns">
+      <button>全部</button>
+      <button>直播中</button>
+      <button>音樂</button>
+      <button>合輯</button>
+      <button>卡通</button>
+      <button>精靈寶可夢</button>
+      <button>烹飪節目</button>
+      <button>饒舌</button>
+      <button>手工藝</button>
+      <button>美容訣竅</button>
+      <button>旅遊勝地</button>
+      <button>健身</button>
+      <button>平台遊戲</button>
+      <button>動作冒險遊戲</button>
+      <button>寵物</button>
+      <button>視覺藝術</button>
+      <button>最新上傳</button>
+      <button>已觀看</button>
+    </div>
+
+    <div id="app" class="main_container">
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[0].img" alt="" />
+          <div class="time"><p>{{Menu[0].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[0].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[0].name}}</p>
+            <p class="creater">{{Menu[0].creatername}}．{{Menu[0].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[1].img" alt="" />
+          <div class="time"><p>{{Menu[1].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[1].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[1].name}}</p>
+            <p class="creater">{{Menu[1].creatername}}．{{Menu[1].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[2].img" alt="" />
+          <div class="time"><p>{{Menu[2].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[2].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[2].name}}</p>
+            <p class="creater">{{Menu[2].creatername}}．{{Menu[2].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[3].img" alt="" />
+          <div class="time"><p>{{Menu[3].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[3].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[3].name}}</p>
+            <p class="creater">{{Menu[3].creatername}}．{{Menu[3].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[4].img" alt="" />
+          <div class="time"><p>{{Menu[4].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[4].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[4].name}}</p>
+            <p class="creater">{{Menu[4].creatername}}．{{Menu[4].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[5].img" alt="" />
+          <div class="time"><p>{{Menu[5].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[5].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[5].name}}</p>
+            <p class="creater">{{Menu[5].creatername}}．{{Menu[5].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[6].img" alt="" />
+          <div class="time"><p>{{Menu[6].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[6].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[6].name}}</p>
+            <p class="creater">{{Menu[6].creatername}}．{{Menu[6].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[7].img" alt="" />
+          <div class="time"><p>{{Menu[7].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[7].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[7].name}}</p>
+            <p class="creater">{{Menu[7].creatername}}．{{Menu[7].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[8].img" alt="" />
+          <div class="time"><p>{{Menu[8].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[8].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[8].name}}</p>
+            <p class="creater">{{Menu[8].creatername}}．{{Menu[8].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[9].img" alt="" />
+          <div class="time"><p>{{Menu[9].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[9].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[9].name}}</p>
+            <p class="creater">{{Menu[9].creatername}}．{{Menu[9].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[10].img" alt="" />
+          <div class="time"><p>{{Menu[10].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[10].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[10].name}}</p>
+            <p class="creater">{{Menu[10].creatername}}．{{Menu[10].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[11].img" alt="" />
+          <div class="time"><p>{{Menu[11].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[11].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[11].name}}</p>
+            <p class="creater">{{Menu[11].creatername}}．{{Menu[11].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[12].img" alt="" />
+          <div class="time"><p>{{Menu[12].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[12].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[12].name}}</p>
+            <p class="creater">{{Menu[12].creatername}}．{{Menu[12].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[13].img" alt="" />
+          <div class="time"><p>{{Menu[13].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[13].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[13].name}}</p>
+            <p class="creater">{{Menu[13].creatername}}．{{Menu[13].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[14].img" alt="" />
+          <div class="time"><p>{{Menu[14].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[14].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[14].name}}</p>
+            <p class="creater">{{Menu[14].creatername}}．{{Menu[14].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[15].img" alt="" />
+          <div class="time"><p>{{Menu[15].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[15].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[15].name}}</p>
+            <p class="creater">{{Menu[15].creatername}}．{{Menu[15].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[16].img" alt="" />
+          <div class="time"><p>{{Menu[16].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[16].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[16].name}}</p>
+            <p class="creater">{{Menu[16].creatername}}．{{Menu[16].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[17].img" alt="" />
+          <div class="time"><p>{{Menu[17].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[17].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[17].name}}</p>
+            <p class="creater">{{Menu[17].creatername}}．{{Menu[17].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[18].img" alt="" />
+          <div class="time"><p>{{Menu[18].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[18].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[18].name}}</p>
+            <p class="creater">{{Menu[18].creatername}}．{{Menu[18].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="yt_media">
+        <div class="preview">
+          <img :src=" Menu[19].img" alt="" />
+          <div class="time"><p>{{Menu[19].time}}</p></div>
+        </div>
+        <div class="media_b">
+          <img :src=" Menu[19].creater" alt="" />
+          <div class="media_b_m">
+            <p class="name">{{Menu[19].name}}</p>
+            <p class="creater">{{Menu[19].creatername}}．{{Menu[19].infor}}</p>
+          </div>
+          <div class="media_b_r">
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 24px;
+                height: 24px;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b_nav">
+      <a href="">
+        <div id="home" class="b_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path d="M4,21V10.08l8-6.96l8,6.96V21h-6v-6h-4v6H4z"></path>
+          </svg>
+          <p>首頁</p>
+        </div></a
+      >
+      <a href="">
+        <div class="b_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M14.72,17.84c-0.32,0.27-0.83,0.53-1.23,0.66c-1.34,0.33-2.41-0.34-2.62-0.46c-0.21-0.11-0.78-0.38-0.78-0.38 s0.35-0.11,0.41-0.13c1.34-0.54,1.89-1.24,2.09-2.11c0.2-0.84-0.16-1.56-0.31-2.39c-0.12-0.69-0.11-1.28,0.12-1.9 c0.02-0.05,0.12-0.43,0.12-0.43s0.11,0.35,0.13,0.41c0.71,1.51,2.72,2.18,3.07,3.84c0.03,0.15,0.05,0.3,0.05,0.46 C15.8,16.3,15.4,17.26,14.72,17.84z M12.4,4.34c-0.12,0.08-0.22,0.15-0.31,0.22c-2.99,2.31-2.91,5.93-2.31,8.55l0.01,0.03l0.01,0.03 c0.06,0.35-0.05,0.7-0.28,0.96c-0.24,0.26-0.58,0.41-0.95,0.41c-0.44,0-0.85-0.2-1.22-0.6c-0.67-0.73-1.17-1.57-1.5-2.46 c-0.36,0.77-0.75,1.98-0.67,3.19c0.04,0.51,0.12,1,0.25,1.43c0.18,0.6,0.43,1.16,0.75,1.65c1.05,1.66,2.88,2.82,4.78,3.05 c0.42,0.05,0.85,0.08,1.26,0.08c1.34,0,3.25-0.27,4.74-1.57c1.77-1.56,2.35-3.99,1.44-6.06c-0.04-0.1-0.06-0.14-0.09-0.19 l-0.04-0.08c-0.21-0.42-0.47-0.81-0.75-1.14c-0.24-0.3-0.48-0.56-0.79-0.83c-0.3-0.27-0.64-0.51-1-0.77 c-0.46-0.33-0.93-0.67-1.38-1.09C12.98,7.83,12.3,6.11,12.4,4.34 M14.41,2c0,0-0.2,0.2-0.56,0.99c-0.66,1.92-0.15,3.95,1.34,5.39 c0.73,0.69,1.61,1.17,2.36,1.84c0.32,0.29,0.62,0.59,0.89,0.93c0.36,0.42,0.66,0.89,0.91,1.38c0.05,0.1,0.1,0.2,0.14,0.3 c1.12,2.55,0.36,5.47-1.73,7.31C16.23,21.47,14.22,22,12.22,22c-0.47,0-0.95-0.03-1.41-0.09c-2.29-0.28-4.42-1.66-5.63-3.57 c-0.39-0.6-0.68-1.26-0.88-1.93c-0.16-0.54-0.25-1.1-0.29-1.67c-0.12-1.88,0.67-3.63,1.08-4.31c0.41-0.69,1.55-2.18,1.55-2.18 s0,0.03-0.01,0.09C6.41,10.11,7,11.88,8.22,13.22c0.15,0.17,0.27,0.22,0.34,0.22c0.06,0,0.09-0.04,0.08-0.09 C7.79,9.59,8.37,6,11.35,3.7c0.59-0.46,1.51-0.94,1.98-1.18C13.8,2.28,14.41,2,14.41,2L14.41,2z"
+            ></path>
+          </svg>
+          <p>發燒影片</p>
+        </div></a
+      >
+      <a href="">
+        <div class="b_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z"
+            ></path>
+          </svg>
+          <p>訂閱內容</p>
+        </div></a
+      >
+      <a href="">
+        <div class="b_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            class="changecolor"
+          >
+            <path
+              d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+            ></path>
+          </svg>
+          <p>媒體櫃</p>
+        </div></a
+      >
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"
+      integrity="sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let data = {
+        index: 0,
+        Menu: [
+          {
+            img: './img/media_img/yt-img.jpg',
+            creater: './img/creater.jpg',
+            time: '4:08',
+            creatername: 'Agnes Lu',
+            infor: '觀看次數：1329萬次．4 年前',
+            name: '拯救了整座城市，卻救不了你：Something Just Like This 如此而已 - The Chainsmokers & Coldplay 剪輯版 蜘蛛人驚奇再起 中文字幕'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/S2Cti12XBw4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD_OLlnn4xKF-j0UXcRhy5OTtcbyQ',
+            creater:
+              'https://yt3.ggpht.com/CL8tVHSaAetXksR5I_RCn1tgfvrfRfyeoVasD4c3Vav4-ikrZA0LzDZdIgg4tcDf90-yPQpndA=s88-c-k-c0x00ffffff-no-rj',
+            time: '4:25',
+            creatername: 'Maroon 5',
+            infor: '觀看次數：1.8億次．12 年前 ',
+            name: 'Maroon 5 - Sunday Morning (Closed Captioned)'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/6uddGul0oAc/hq720_live.jpg?sqp=CNyk54YG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQb9-o3Jt2E6L60Ak2OxnNMccB-Q',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLTGFvRaz8sjeqI0D3bukwoHgibpgOrMnvAOgMzEGA=s88-c-k-c0x00ffffff-no-rj',
+            time: '8:05:04',
+            creatername: 'Cafe Music BGM channel ',
+            infor: '觀看次數：1.7萬次．4 天前',
+            name: 'TOKYO Cafe: Beautiful Relaxing Jazz Piano Music for Stress Relief - Night Coffee Shop Ambience'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/ghjJVF3WUkU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJkOuqYfSjDIuLs2OxkckVBiMOuw',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLTKULW5KkYeiNZuiJceQW1RonAfeAPFvDIs0KX3=s68-c-k-c0x00ffffff-no-rj',
+            time: '11:54:59',
+            creatername: '洋楽がめっちゃ超いい',
+            infor: '觀看次數：16萬次．4 天前',
+            name: '2020 2021年に世界的に大ヒットした洋楽100曲！絶対にあなたも一度は聴いたことがあるはず！ 洋楽 有名 - 洋楽 最新 - 2020 2021洋楽 - 洋楽 ヒット チャート'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/44jmD2umbec/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCT41VLSU4xBKEjSkBpWz2zpdBUgg',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLTCGiM-wQo5lHpHr62WkOa_y1mezJzNPjpyjy-CVA=s68-c-k-c0x00ffffff-no-rj',
+            time: '1:25',
+            creatername: 'TVBS NEWS',
+            infor: '觀看次數：6.7萬次．1 天前',
+            name: '新冠病毒似阿茲海默 「康復者腦組織流失」【TVBS說新聞】20210626'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/GAuiOjfjzZE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCslmZm9ytuW5sy9aQ-VdjAzAPC0Q',
+            creater:
+              'https://yt3.ggpht.com/NgiSqZNIK1MRAy7gzEOI5Gg-giFL176ywbTsf3hsTrwGYE0qQojsAX-gEgqMZOLXR0zTunXtppU=s68-c-k-c0x00ffffff-no-rj',
+            time: '3:26:27',
+            creatername: 'Soraki Ghibli',
+            infor: '觀看次數：35萬次．1 週前',
+            name: 'Soraki Ghibli || 吉卜力钢琴 💓 轻松的音乐 👏👏 千与千寻, 天空之城, 哈尔的移动城堡,... #22'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/lG8WRX-kdHI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDz80DQENY6tFvlk0v8qv7svN4gUg',
+            creater:
+              'https://yt3.ggpht.com/OfNnBWjuiOdkj2sc5TJ0yMteKHb7i1yFCF8W5TnkvI9PXkh8ruCZaoveYLbusGH4HVLclR9w=s68-c-k-c0x00ffffff-no-rj',
+            time: '1:17:45',
+            creatername: 'Top Songs Playlist',
+            infor: '觀看次數：18萬次．13 天前',
+            name: 'M A R O O N 5 GREATEST HITS FULL ALBUM - BEST SONGS OF M A R O O N 5 PLAYLIST 2021'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/zY-ZpLDFG9I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD_ZQuPKJFimiDuMOJ1XUrPTvITBg',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLTAzgxZHdt2Hwfjt-7dQGzL9tQjlqrUR3NzYJom=s68-c-k-c0x00ffffff-no-rj',
+            time: '3:13:05',
+            creatername: '衛生福利部疾病管制署',
+            infor: '觀看次數：5.6萬次．1 天前',
+            name: 'COVID-19 Clinical Rounds：新冠病毒重症個案個案臨床處置（7）'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/xJsnTwMgRbw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxY6H7VFtSjvT6K5Jo6AzCmOKgmg',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLRmEvdDsMpMMo8LXqibC3g1d5iqT4KYkq8KqOdK=s68-c-k-c0x00ffffff-no-rj',
+            time: '6:29',
+            creatername: '反正我很閒',
+            infor: '觀看次數：4.3萬次．1 天前',
+            name: '【演員試鏡】職場面試、演員試鏡成功方法！關鍵錄取真相！！｜反正我很閒'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/Xgd1JaKbS0M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHbQ2UDvtV7QOUCxBeJ5LWd3fIhg',
+            creater:
+              'https://yt3.ggpht.com/r1J5MWB7fHyqZ13FJSEdH6DOUCGje3ayA1dSDRz6ZIW6AU4dwoUm3Yc7L0WU8fGCGWQ4S5__ovs=s68-c-k-c0x00ffffff-no-rj',
+            time: '1:13:12',
+            creatername: '폴라베어',
+            infor: '觀看次數：17萬次．1 年前',
+            name: '너의 이름은 ost 모음 CD고음질사운드트랙 (가사, 독음, 해석) / 君の名は｡OST 母音 袈裟 / your name｡OST Full Soundtrack(Lyrics)'
+          },
+
+          {
+            img: 'https://i.ytimg.com/vi/kImS_NWV9YU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9VCZlRexTUMPD5winC5FQO1KznA',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLQwjKSwyDgelDobQLukn7vJYyLnZwORGcSVzr5Otw=s68-c-k-c0x00ffffff-no-rj',
+            time: '1:00:23',
+            creatername: 'the bootleg boy 2 ',
+            infor: '觀看次數：3.1萬次．6 天前',
+            name: 'ＣＨＩＬＬ ＆ ＣＲＵＩＳＥ - [1 HOUR]'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/JxSagyUZhZQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMwMzhm-oOA6f_vdU_0A64mHGcDw',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLTCVwwcjfYgsk_3SSY4F__ljZNUwY9RIcbtmQ=s68-c-k-c0x00ffffff-no-rj',
+            time: '40:01',
+            creatername: 'SaoPei Pop Song',
+            infor: '觀看次數：245萬次．1 年前',
+            name: 'No Ad 周杰伦 范特西 (2001專輯) Jay Chou Fan Te Xi Fantasy Full Album 周杰伦精选Jay Chou Collection'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/E4AwGTN4f8E/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC57joib72s07okm8zH6pVrFyhsaA',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLRKewI_hecLLfyY7JK4-Pcwru8l6b38Knd4A78=s68-c-k-c0x00ffffff-no-rj',
+            time: '12:56',
+            creatername: 'わらび餅モンスト',
+            infor: '觀看次數：1.1萬次．5 小時前',
+            name: '【モンスト】『浦女3年生』艦隊で禁忌火属性クエストを全制覇出来る⁉︎試してみた！【ラブライブコラボ】'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/Ho89eZz71SA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfXS7usRLfMjbOQRUfk6prPkhicw',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLRxTY2I58c6vuA_9t7kKC0zaFeSc8MOI2U57lGr2A=s68-c-k-c0x00ffffff-no-rj',
+            time: '43:30',
+            creatername: '同學來了',
+            infor: '觀看次數：1 萬次．1 天前',
+            name: "【完整版】跟你當朋友我好苦　綠葉心酸誰人知| 同學來了2021.06.28"
+          },
+          {
+            img: 'https://i.ytimg.com/vi/xieFiCBI-Zk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCAK_cbjMSv87yrYEDMGzGBfMSMag',
+            creater:
+              'https://yt3.ggpht.com/NgiSqZNIK1MRAy7gzEOI5Gg-giFL176ywbTsf3hsTrwGYE0qQojsAX-gEgqMZOLXR0zTunXtppU=s68-c-k-c0x00ffffff-no-rj',
+            time: '6:12:22',
+            creatername: 'Soraki Ghibli',
+            infor: '觀看次數：2.5萬次．2 天前',
+            name: 'Soraki Ghibli || 吉卜力钢琴 💓 轻松的音乐 👏👏 千与千寻, 天空之城, 哈尔的移动城堡,... #32'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/3AtDnEC4zak/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDSi3anCWzVWX2_et_V8qxdpzdbAA',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLQfPhq9VZxF2u2S5_PJuodbst-oI_GmP5ibk7VaKA=s88-c-k-c0x00ffffff-no-rj',
+            time: '3:51',
+            creatername: 'Charlie Puth',
+            infor: '觀看次數：26億次．4 年前',
+            name: "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]"
+          },
+          {
+            img: 'https://i.ytimg.com/vi/-D90a49IJMI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzeDWwK999rjzrvCLrxAbz12jYkw',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLRmYhENxgAUo7bYhyv76kTIQgiJzwG_krQ5Q4SN-Q=s68-c-k-c0x00ffffff-no-rj',
+            time: '41:11',
+            creatername: 'R&B / Hip Hop',
+            infor: '觀看次數：5.3萬次．3 個月前',
+            name: 'Guardians of the Galaxy: Awesome Mix Vol. 1'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/xznFhLGteRs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnhWW4Fcdo3cVwAWBHS8pz6us4RQ',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLRxbvBPZq2PfZxVEh5mFKxtO0PVGcnGr7suVoif=s68-c-k-c0x00ffffff-no-rj',
+            time: '13:42',
+            creatername: 'Gamer Secret 玩家機密',
+            infor: '觀看次數：30萬次．2 天前',
+            name: '為什麼不會有【GTA 6】？論壇細思極恐的爆料讓遊戲背景更清晰！甚至玩家其實都一直看到GTA 6的進展？'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/cL4uhaQ58Rk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuDw0LTVEhSVSRQN1LFV0gVreXoA',
+            creater:
+              'https://yt3.ggpht.com/CL8tVHSaAetXksR5I_RCn1tgfvrfRfyeoVasD4c3Vav4-ikrZA0LzDZdIgg4tcDf90-yPQpndA=s88-c-k-c0x00ffffff-no-rj',
+            time: '4:35',
+            creatername: 'Maroon 5',
+            infor: '觀看次數：1.3億次．6 年前',
+            name: 'Adam Levine - Lost Stars (from Begin Again)'
+          },
+          {
+            img: 'https://i.ytimg.com/vi/CfPxlb8-ZQ0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkbzYnc9Y37friEZEFB122XuDfdQ',
+            creater:
+              'https://yt3.ggpht.com/ytc/AKedOLSvKjR8Yn5dwz_155qtxmSjroTIPUlAcjmWn-wD=s68-c-k-c0x00ffffff-no-rj',
+            time: '3:22:29',
+            creatername: 'Musictag',
+            infor: '觀看次數：310萬次．10 個月前',
+            name: 'Work & Study Lofi Jazz - Relaxing Smooth Background Jazz Music for Work, Study, Focus, Coding'
+          }
+        ]
+      };
+
+      let vm = new Vue({
+        el: '#app',
+        data: data,
+      });
+    </script>
+    <script src="./test.js"></script>
+  </body>
+</html>
