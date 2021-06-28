@@ -211,6 +211,7 @@ nav {
   align-items: center;
   background-color: #fff;
   box-shadow: rgb(0, 0, 0, 0.1) 0px 0.5px 10px;
+  
   .b_icon {
     display: flex;
     flex-direction: column;
@@ -240,7 +241,6 @@ nav {
     width:100%;
     img {
     width:100%;
-
     }
   }
   .time {
@@ -321,6 +321,9 @@ nav {
   .yt_media {
     width: 47%;
     .media_b {
+      img {
+        margin-left: 12px;
+      }
       .name {
       .creater {
         font-size: 12px;
@@ -329,13 +332,15 @@ nav {
   }
 }
 }
+
+
+
 @media screen and (max-width:588px){
   .yt_media {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     .media_b {
-      margin-left: 12px;
       .name {
         width: 380px;
     }
@@ -343,11 +348,7 @@ nav {
 }
 @media screen and (max-width:414px){
   .yt_media {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
     .media_b {
-      margin-left: 12px;
       .name {
         width: 280px;
     }

@@ -370,6 +370,9 @@ nav .nav_right {
   .yt_media {
     width: 47%;
   }
+  .yt_media .media_b img {
+    margin-left: 12px;
+  }
   .yt_media .media_b .name .creater {
     font-size: 12px;
   }
@@ -380,22 +383,11 @@ nav .nav_right {
     margin-right: 0;
     width: 100%;
   }
-  .yt_media .media_b {
-    margin-left: 12px;
-  }
   .yt_media .media_b .name {
     width: 380px;
   }
 }
 @media screen and (max-width: 588px) and (max-width: 414px) {
-  .yt_media {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-  .yt_media .media_b {
-    margin-left: 12px;
-  }
   .yt_media .media_b .name {
     width: 280px;
   }
