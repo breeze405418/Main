@@ -156,6 +156,10 @@ button {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 nav {
   padding: 10px;
   position: sticky;
@@ -190,22 +194,19 @@ nav .nav_right {
 
 .btns {
   padding: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 28px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   border-bottom: 1px solid #eeeeee;
 }
 .btns button {
-  display: block;
+  display: inline-block;
   background-color: #eeeeee;
-  padding: 0px 12px;
+  padding: 0 12px;
   font-size: 14px;
   border: 1px solid #dddddd;
   border-radius: 50px;
@@ -225,7 +226,7 @@ nav .nav_right {
   position: sticky;
   bottom: 0;
   height: 48px;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +321,6 @@ nav .nav_right {
   padding-top: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   width: 85%;
   line-height: 20px;
   display: -webkit-box;
@@ -380,12 +380,25 @@ nav .nav_right {
   .yt_media {
     margin-left: 0;
     margin-right: 0;
-    width: 100vw;
+    width: 100%;
   }
   .yt_media .media_b {
     margin-left: 12px;
   }
   .yt_media .media_b .name {
     width: 380px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 414px) {
+  .yt_media {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .yt_media .media_b {
+    margin-left: 12px;
+  }
+  .yt_media .media_b .name {
+    width: 280px;
   }
 }/*# sourceMappingURL=style.css.map */
