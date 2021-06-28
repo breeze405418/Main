@@ -364,8 +364,6 @@ nav .nav_right {
   }
   .yt_media .media_b .name .creater {
     width: 80%;
-    margin-bottom: 2px;
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 874px) {
