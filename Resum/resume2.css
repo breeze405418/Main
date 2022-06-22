@@ -1,0 +1,174 @@
+.container{
+    margin: auto;
+    display: flex;
+    /* width: 50%; */
+
+}
+.left{
+    background-color: black;
+    width: 40%;
+    color: aliceblue;
+    padding: 10px 0 20px 0;
+}
+.photo{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.photo img{
+    border-radius: 50px 50px 50px 50px;
+    /* width: 70% */
+}
+.left-title{
+    text-align: center;
+}
+.left-title h2{
+    border: solid 3px #79BEDB;
+    border-radius: 50px;
+    margin: 30px 15% 30px 15%;
+    padding: 10px;
+}
+
+.contact-list{
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+.contact-list svg{
+    width: 25px;
+    height: 25px;
+    color: white;    
+}
+
+.left-title .icon{
+    background-color: #79BEDB;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 10px 10px 20%;
+}
+.content{
+    margin-left: 20px;
+}
+
+
+.Progress{
+    background-color: #f5f5f5;
+    width: 70%;
+    height: 5px;
+    border: solid 1px #fff1ac;
+    border-radius: 50px; 
+    position: relative;
+}
+/*進度條*/
+.Progress::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #1F6ED4;
+    height: 5px;
+    border-radius: 25px 0px 0px 25px; 
+    width: 97%;
+}
+.Progress-70{
+    background-color: #f5f5f5;
+    width: 70%;
+    height: 5px;
+    border: solid 1px #fff1ac;
+    border-radius: 50px; 
+    position: relative;
+}
+/*進度條*/
+.Progress-70::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #1F6ED4;
+    height: 5px;
+    border-radius: 25px 0px 0px 25px; 
+    width: 70%;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+   margin: 10px 0 5px 0;
+}
+
+/*RIGHT - RIGHT - RIGHT - RIGHT - RIGHT*/
+.right{
+    background-color: rgb(218, 218, 218);
+    width: 80%;
+    color: black;
+}
+.right h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.right h2{
+    text-align: center;
+    font-size: 40px;
+    background-color: #84c0da;
+    padding: 15px;
+    margin: -10px 0 0 0;
+}
+.right-details-title{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+.right-details-title span{
+    background-color: #3f6297;
+    color: aliceblue;
+    font-size: 45px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.right-details-title h3{
+    font-size: 35px;
+}
+.right-details-title hr{
+    width: 40%;
+    margin: 0 ;
+}
+.hr-dot{
+    border: 10px dotted rgb(122, 127, 196);
+    border-style: none none dotted; 
+}
+
+.right-details{
+    display: flex;
+    /* justify-content: space-around; */
+    text-align: start;
+    align-items: center;
+}
+.right-details-content{
+    margin-left: 40px;
+}
+
+.right-details-year{
+    background-color: #000000;
+    color: aliceblue;
+    border-radius: 0px 30px 30px 0px;
+    padding: 2px 2% 2px 10%;    
+}
+.right-details-year h4{
+    width: 120px;
+    padding: 10px;    
+}
+.right-details{
+    margin: 10px 0 10px 0;
+}
